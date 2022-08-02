@@ -1,1 +1,1 @@
-# beccollegewebsite
+# BEC College Website
