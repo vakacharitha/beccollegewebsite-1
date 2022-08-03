@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+:root {
+	font-family: "Roboto", sans-serif;
+	padding: 0px;
+	margin: 0px;
+	font-size: 62.5%;
+	box-sizing: border-box;
+	--primary-color: #0061b0;
+	/* --header-bg-light-color: #fff;
+	--header-boxshadow-light-color: rgba(0, 0, 0, 0.3);
+	--seperator: #8a8a8f;
+	--code-highlight: #ffa07a; */
+}
+
+.welcometobec {
+	display: flex;
+	margin-bottom: 3rem;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 4rem;
+}
+.welcomebec-info {
+	text-align: justify;
+	text-justify: initial;
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 0 7rem 0 -9rem;
+}
+
+.principals-message-heading {
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+
+.seperator {
+	width: 6rem;
+	height: 0.4rem;
+	background-color: #0061b0;
+	margin: 1rem 0 1rem 0;
+	animation: lineH 1s ease-in;
+}
+
+@keyframes lineH {
+	0% {
+		width: 0rem;
+	}
+	100% {
+		width: 6rem;
+	}
+}
+
+.principals-message-photo {
+	margin: 2rem 0 2rem 12rem;
+	height: 20rem;
+	width: 30rem;
+}
+
+.principals-message-info {
+	text-align: justify;
+	text-justify: initial;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.principals-message-name {
+	margin: 2rem 0 0 0;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.principals-message-title {
+	font-size: 2rem;
+	font-weight: 700;
+}
