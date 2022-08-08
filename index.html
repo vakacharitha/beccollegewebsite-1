@@ -1,47 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Bapatla Engineering College</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	</head>
-	<body>
-        <div class="container">
-            <div class="row">
-              <div class="col">
-				<div class="welcometobec">Welcome to Bapatla Engineering College</div>
-			</div>
-              <div class="w-100"></div>
-              <div class="col">
-				<div class="welcomebec-info">
-				The Bapatla Engineering College(Autonomous), one of the seven
-				educational institutions sponsored by the Bapatla Education Society, was
-				established in 1981 with a vision to impart quality technical education
-				and is affiliated to Acharya Nagarjuna University. The College is a
-				little away from the din and bustle of Bapatla, a town with a historic
-				and hoary past, about 75 Km. south of Vijayawada on Chennai-Vijayawada
-				rail route. The college offers B.Tech. Programmes in 8 branches of
-				Engineering:- Civil, Computer Science, Electronics and Communications,
-				Electrical and Electronics, Mechanical Engineering which are thrice NBA
-				accredited, Electronics and Instrumentation, Chemical Engineering which
-				are accredited twice and Information Technology which is accredited
-				once.
-			    </div>
-		      </div>
-              <div class="col">
-				<div class="principals-message">
-				<div class="principals-message-heading">Prinicipal's Message</div>
-                <div class="seperator"></div>
-                <img src="assets/prinicpalsphoto.jpeg" alt="principal's photo" class="principals-message-photo"></div>
-                <div class="principals-message-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deleniti praesentium repellendus excepturi tempora impedit expedita totam nihil? Libero quaerat magnam, animi ullam praesentium perspiciatis corporist! Et neque expedita minima laudantium aliquam porro iure optio magni, reiciendis deserunt dignissimos velit ipsam laborum, fuga tenetur iste ipsum provident.</div>
-                <div class="principals-message-name">Dr. Nazir Shaik, M.Tech; Ph.D</div>
-                <div class="principals-message-title">Principal</div>
-			</div></div>
-            </div>
-          </div>
-       <script src="app.js"></script>
-	</body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bec website</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link href="../Homepage/style.css" rel="stylesheet">
+    <link href="path/to/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../index-style/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../Homepage/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <!-- Navigationbar for Title-->
+  <nav class="navbar-fixed navbar-light bg-white">
+    <div class="row">
+      <div class="col-lg-3" >
+        <a class="navbar-brand" href="#">
+          <img class="no1" src="../images/no1.png"/>
+          <img  class="bec_logo" src="../images/bec_logo.png" />
+        </a>
+      </div>
+      <div class="col-lg-6" >
+        <h2><p class="college_title">BAPATLA ENGINEERING COLLEGE</p></h2>
+        <p class="autonomous">(AUTONOMOUS)</p>
+        <p class="anu">Afficliated to Acharaya Nagarajuna University, Guntur</p>
+        <p class="estd">ESTD.1981</p>
+        <p class="becb">EAMCET CODE: BECB</p>
+      </div>
+      <div class="col-lg-3" >
+        <a><img class="naac" src="../images/naacgrade.png"/></a>
+      </div>
+    </div>
+</nav>
+
+<!--Menubar for list items-->
+
+<div>
+  <nav class="navigation">
+    <ul>
+      <li><a href="#"><i class="fa fa-home "></i></a>
+      </li>
+      <li><a href="#">About us <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</i></a>
+            <ul>
+              <li><a href="#">College</a></li>
+              <li><a href="#">College</a></li>
+              <li><a href="#">College</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Quality policy</a>
+            <ul>
+              <li><a href="#">College</a></li>
+              <li><a href="#">College</a></li>
+              <li><a href="#">College</a></li>
+            </ul>
+          </li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Departments <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Facilities <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Academics <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Students <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Governance <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Exams & Results <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Admissions <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Placements <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Alumini <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Research <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Login </a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+     <li><a href="#">Reach us <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#">Vision and mission</a></li>
+          <li><a href="#">Quality policy</a></li>
+          <li><a href="#">College</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Academic council</a></li>
+          <li><a href="#">Governing body</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+
+<!--Carousel slides-->
+<section >
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../images/Main-Building.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>"Work is Worship"</h1>
+        <p class="motto">The motto of our college which drove it to be one <br/>
+          the best engineering college in Andhra Pradesh</p>
+      </div>
+    </div>
+    
+    <div class="carousel-item">
+      <img src="../images/geb.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>"Work is Worship"</h1>
+        <p class="motto">The motto of our college which drove it to be one <br/>
+          the best engineering college in Andhra Pradesh</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../images/rp.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>"Work is Worship"</h1>
+        <p class="motto">The motto of our college which drove it to be one <br/>
+          the best engineering college in Andhra Pradesh</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../images/passedout.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>"Work is Worship"</h1>
+        <p class="motto">The motto of our college which drove it to be one <br/>
+          the best engineering college in Andhra Pradesh</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="fa fa-chevron-right slider-arr" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="fa fa-chevron-right slider-arr" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+<!-- International section rightside of window-->
+<a href="" target="_blank" id="rum_sst_tab" class="rum_sst_contents rum_sst_right">International Conference</a>
+
+<!--counter-->
+<section style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+color: white;">
+  <div class="container servicediv d-flex justify-content-around align-items-center">
+    <div>
+      <h1 class="count">123</h1>
+      <p style="text-align: center;">Ph.D Faculty</p>
+    </div>
+
+    <div>
+      <h1 class="count">100</h1>
+      <p  style="text-align: center;">Publications</p>
+    </div>
+
+    <div>
+      <h1 class="count">120</h1>
+      <p  style="text-align: center;">R&D Projects</p>
+    </div>
+
+    <div>
+      <h1 class="count">200</h1>
+      <p  style="text-align: center;">IPR's</p>
+    </div>
+  </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+ <script>
+  	$('.count').counterUp({
+  		delay:10,
+  		time:3000
+  	})
+  </script>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+<div class="welcometobec">Welcome to Bapatla Engineering College</div>
+</div>
+    <div class="w-100"></div>
+    <div class="col">
+<div class="welcomebec-info">
+The Bapatla Engineering College(Autonomous), one of the seven
+educational institutions sponsored by the Bapatla Education Society, was
+established in 1981 with a vision to impart quality technical education
+and is affiliated to Acharya Nagarjuna University. The College is a
+little away from the din and bustle of Bapatla, a town with a historic
+and hoary past, about 75 Km. south of Vijayawada on Chennai-Vijayawada
+rail route. The college offers B.Tech. Programmes in 8 branches of
+Engineering:- Civil, Computer Science, Electronics and Communications,
+Electrical and Electronics, Mechanical Engineering which are thrice NBA
+accredited, Electronics and Instrumentation, Chemical Engineering which
+are accredited twice and Information Technology which is accredited
+once.
+</div>
+</div>
+    <div class="col">
+<div class="principals-message">
+<div class="principals-message-heading">Prinicipal's Message</div>
+      <div class="seperator"></div>
+      <img src="../images/prinicpalsphoto.jpeg" alt="principal's photo" class="principals-message-photo"></div>
+      <div class="principals-message-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deleniti praesentium repellendus excepturi tempora impedit expedita totam nihil? Libero quaerat magnam, animi ullam praesentium perspiciatis corporist! Et neque expedita minima laudantium aliquam porro iure optio magni, reiciendis deserunt dignissimos velit ipsam laborum, fuga tenetur iste ipsum provident.</div>
+      <div class="principals-message-name">Dr. Nazir Shaik, M.Tech; Ph.D</div>
+      <div class="principals-message-title">Principal</div>
+</div></div>
+  </div>
+</div>
+<script src="app.js"></script>
+
+
+</body>

@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    overflow-y: none;
+}
+.bec_logo{
+    height: 150px;
+    background-color: transparent;
+    margin-left: 120px;
+    width: 120px;
+    cursor: pointer;
+}
+.no1{
+    width: 200px;
+    height: 100px;
+    margin-left: 80px;
+}
+.naac{
+    width: 190px;
+    height: 110px;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.college_title{
+    font-family: Poppins,sans-serif;
+    text-transform: uppercase; 
+    color: #0060b1 !important;
+    margin-left: 140px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.autonomous{
+    position:absolute;
+    top: 33%;
+    left: 330px;
+    font-size: 18px;
+    color: #000;
+    font-weight: normal;
+    line-height: 30px;
+    font-weight: bold;
+}
+.anu{
+    position:absolute;
+    top: 45%;
+    left: 230px;
+    color: #000;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+    font-weight: bold;
+}
+.estd{
+    position:absolute;
+    top: 58%;
+    left: 157px;
+    color: #000;
+    font-weight: bold;
+}
+.becb{
+    position:absolute;
+    top: 58%;
+    right: 95px;
+    color: #000;
+    font-weight: bold;
+}
+.motto{
+    margin-left: 200px;
+}
+.slider-arr{
+    color: #fff;
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    padding: 17px;
+    border-radius: 50px;
+}
+#rum_sst_tab {
+	font-family:Arial, sans-serif;
+	top:250px;
+	background-color:#0060b1 !important;
+	color:black;
+	border-style:solid;
+	border-width:0px;
+}
+
+#rum_sst_tab:hover {
+	background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.rum_sst_contents {
+	position:fixed;
+	margin:0;
+	padding:6px 13px 8px 13px;
+	text-decoration:none;
+	text-align:center;
+	font-size:15px;
+	font-weight:bold;
+	border-style:solid;
+	display:block;
+	z-index:100000;
+}
+
+.rum_sst_right {
+   	right:-1px;
+	cursor: pointer;
+	transform-origin:100% 100%;
+	transform:rotate(-90deg);
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+}
+
+.rum_sst_right.less-ie-9 {
+	right:-120px;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.rum_sst_left.less-ie-9 {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.navigation{
+    background-color:white;
+    height: 40px;
+    position: relative;
+    z-index: 2;
+    overflow-y: none;   
+}
+.navigation ul{
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left: 3px;
+
+}
+.navigation ul li{
+    background-color: white;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0 7px;
+    color: #0060b1 !important;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    overflow-y: none;
+
+}
+.navigation ul ul{
+    position: absolute;
+    height: 50px;
+    display: none;
+}
+.navigation ul li:hover > ul{
+    display: block;
+    overflow-y: none;
+}
+.navigation ul ul li{
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+.navigation ul ul ul li{
+    position: relative;
+    top:-40px;
+    left:177px;
+    background-color: black;
+    columns: white;
+}
+.carousel-item{
+    height: 430px;
+    background: no-repeat scroll center scroll;
+    background-size:cover;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+:root {
+	font-family: "Roboto", sans-serif;
+	padding: 0px;
+	margin: 0px;
+	font-size: 62.5%;
+	box-sizing: border-box;
+	--primary-color: #0061b0;
+	/* --header-bg-light-color: #fff;
+	--header-boxshadow-light-color: rgba(0, 0, 0, 0.3);
+	--seperator: #8a8a8f;
+	--code-highlight: #ffa07a; */
+}
+
+.welcometobec {
+	display: flex;
+	margin-bottom: 3rem;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 4rem;
+}
+.welcomebec-info {
+	text-align: justify;
+	text-justify: initial;
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 0 7rem 0 -9rem;
+}
+
+.principals-message-heading {
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+
+.seperator {
+	width: 6rem;
+	height: 0.4rem;
+	background-color: #0061b0;
+	margin: 1rem 0 1rem 0;
+	animation: lineH 1s ease-in;
+}
+
+@keyframes lineH {
+	0% {
+		width: 0rem;
+	}
+	100% {
+		width: 6rem;
+	}
+}
+
+.principals-message-photo {
+	margin: 2rem 0 2rem 12rem;
+	height: 20rem;
+	width: 30rem;
+}
+
+.principals-message-info {
+	text-align: justify;
+	text-justify: initial;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.principals-message-name {
+	margin: 2rem 0 0 0;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.principals-message-title {
+	font-size: 2rem;
+	font-weight: 700;
+	/* testing */
+}
+
+
+
+
+
