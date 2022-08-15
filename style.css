@@ -129,6 +129,8 @@
 	position: relative;
 	z-index: 2;
 	overflow-y: none;
+	display: flex;
+	justify-content: center;
 }
 .navigation ul {
 	padding: 0;
@@ -141,7 +143,6 @@
 	position: relative;
 	list-style: none;
 	display: inline-block;
-	
 }
 .navigation ul li a {
 	display: block;
@@ -159,7 +160,6 @@
 	margin-left: -13px;
 	display: none;
 	width: max-content;
-	
 }
 .navigation ul li:hover > ul {
 	display: block;
@@ -169,7 +169,6 @@
 	float: none;
 	display: list-item;
 	position: relative;
-	
 }
 .navigation ul ul ul li {
 	position: relative;
@@ -184,24 +183,17 @@
 	background-size: cover;
 }
 
-.main{
+.main {
 	overflow-x: hidden;
-
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 :root {
-	/* font-family: "Roboto", sans-serif;
-	padding: 0px;
-	margin: 0px;
-	font-size: 62.5%;
-	box-sizing: border-box;
-	--primary-color: #0061b0; */
+	--primary-color: #0061b0;
 	--header-bg-light-color: #fff;
 	--header-boxshadow-light-color: rgba(0, 0, 0, 0.3);
 	--seperator: #8a8a8f;
-	--code-highlight: #ffa07a; 
-	/* test push */
+	--code-highlight: #ffa07a;
 }
 
 .welcometobec {
@@ -265,9 +257,8 @@
 .principals-message-title {
 	font-size: 20px;
 	font-weight: 700;
-	/* testing */
 }
 
-.welcometobecsection{
+/* .welcometobecsection {
 	min-height: 100vh;
-}
+} */
