@@ -5,7 +5,7 @@
 .bec_logo {
 	height: 150px;
 	background-color: transparent;
-	margin-left: 120px;
+	margin-left: 92px;
 	width: 120px;
 	cursor: pointer;
 }
@@ -17,7 +17,7 @@
 .naac {
 	width: 190px;
 	height: 110px;
-	margin-left: 50px;
+	margin-left: 98px;
 	margin-top: 30px;
 	font-weight: bold;
 }
@@ -25,7 +25,7 @@
 	font-family: Poppins, sans-serif;
 	text-transform: uppercase;
 	color: #0060b1 !important;
-	margin-left: 140px;
+	margin-left: 160px;
 	margin-top: 20px;
 	font-weight: bolder;
 }
@@ -52,14 +52,14 @@
 .estd {
 	position: absolute;
 	top: 58%;
-	left: 157px;
+	left: 177px;
 	color: #000;
 	font-weight: bold;
 }
 .becb {
 	position: absolute;
 	top: 58%;
-	right: 95px;
+	right: 56px;
 	color: #000;
 	font-weight: bold;
 }
@@ -141,6 +141,7 @@
 	position: relative;
 	list-style: none;
 	display: inline-block;
+	
 }
 .navigation ul li a {
 	display: block;
@@ -155,110 +156,118 @@
 .navigation ul ul {
 	position: absolute;
 	height: 50px;
+	margin-left: -13px;
 	display: none;
+	width: max-content;
+	
 }
 .navigation ul li:hover > ul {
 	display: block;
 	overflow-y: none;
 }
 .navigation ul ul li {
-	width: 180px;
 	float: none;
 	display: list-item;
 	position: relative;
+	
 }
 .navigation ul ul ul li {
 	position: relative;
 	top: -40px;
 	left: 177px;
-	background-color: black;
+	background-color: white;
 	columns: white;
 }
 .carousel-item {
-	height: 430px;
+	height: 450px;
 	background: no-repeat scroll center scroll;
 	background-size: cover;
 }
 
-.mainpage {
-	min-height: 100vh;
+.main{
+	overflow-x: hidden;
+
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 :root {
-	font-family: "Roboto", sans-serif;
+	/* font-family: "Roboto", sans-serif;
 	padding: 0px;
 	margin: 0px;
 	font-size: 62.5%;
 	box-sizing: border-box;
-	--primary-color: #0061b0;
-	/* --header-bg-light-color: #fff;
+	--primary-color: #0061b0; */
+	--header-bg-light-color: #fff;
 	--header-boxshadow-light-color: rgba(0, 0, 0, 0.3);
 	--seperator: #8a8a8f;
-	--code-highlight: #ffa07a; */
+	--code-highlight: #ffa07a; 
 	/* test push */
 }
 
 .welcometobec {
 	display: flex;
-	margin-bottom: 3rem;
+	margin-bottom: 30px;
 	justify-content: center;
 	font-weight: 600;
-	font-size: 4rem;
+	font-size: 40px;
 }
 .welcomebec-info {
 	text-align: justify;
 	text-justify: initial;
-	font-size: 2rem;
+	font-size: 20px;
 	font-weight: 700;
-	margin: 0 7rem 0 -9rem;
+	margin: 0 70px 0 -90px;
 }
 
 .principals-message-heading {
-	font-size: 2rem;
-	letter-spacing: 0.1rem;
+	font-size: 20px;
+	letter-spacing: 1px;
 	font-weight: 700;
 	color: var(--primary-color);
 }
 
 .seperator {
-	width: 6rem;
-	height: 0.4rem;
+	width: 60px;
+	height: 4px;
 	background-color: #0061b0;
-	margin: 1rem 0 1rem 0;
+	margin: 10px 0 10px 0;
 	animation: lineH 1s ease-in;
 }
 
 @keyframes lineH {
 	0% {
-		width: 0rem;
+		width: 0px;
 	}
 	100% {
-		width: 6rem;
+		width: 60px;
 	}
 }
 
 .principals-message-photo {
-	margin: 2rem 0 2rem 12rem;
-	height: 20rem;
-	width: 30rem;
+	margin: 20px 0 20px 120px;
+	height: 200px;
+	width: 300px;
 }
 
 .principals-message-info {
 	text-align: justify;
 	text-justify: initial;
-	font-size: 1.5rem;
+	font-size: 15px;
 	font-weight: 600;
 }
 
 .principals-message-name {
-	margin: 2rem 0 0 0;
-	font-size: 2rem;
+	margin: 20px 0 0 0;
+	font-size: 20px;
 	font-weight: 700;
 }
 
 .principals-message-title {
-	font-size: 2rem;
+	font-size: 20px;
 	font-weight: 700;
 	/* testing */
+}
+
+.welcometobecsection{
+	min-height: 100vh;
 }
