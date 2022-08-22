@@ -2,8 +2,11 @@
 	box-sizing: border-box;
 	overflow-y: none;
 }
+.main{
+	height: 155px;
+}
 .bec_logo {
-	height: 150px;
+	height: 145px;
 	background-color: transparent;
 	margin-left: 92px;
 	width: 120px;
@@ -178,7 +181,7 @@
 	columns: white;
 }
 .carousel-item {
-	height: 450px;
+	height: 420px;
 	background: no-repeat scroll center scroll;
 	background-size: cover;
 }
@@ -261,4 +264,135 @@
 
 /* .welcometobecsection {
 	min-height: 100vh;
+} */
+
+
+.counter{
+    color: #628900;
+    background: linear-gradient(to bottom, #628900 49%, transparent 50%);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    padding: 20px 10px 25px;
+    margin: 0 auto;
+    border: 8px solid #628900;
+    border-radius: 100% 100%;
+    box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+.counter .counter-value{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin: 0 0 25px;
+}
+.counter h3{
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.counter.red{
+    color: #e3213c;
+    background: linear-gradient(to bottom, #e3213c 49%, transparent 50%);
+    border-color: #e3213c;
+}
+.counter.orange{
+    color: #fb8603;
+    background: linear-gradient(to bottom, #fb8603 49%, transparent 50%);
+    border-color: #fb8603;
+}
+.counter.blue{
+    color: #1f8bc1;
+    background: linear-gradient(to bottom, #1f8bc1 49%, transparent 50%);
+    border-color: #1f8bc1;
+}
+@media screen and (max-width:990px) {
+    .counter{ margin-bottom: 40px; }
+}
+
+/* .counter{
+    color: #eb3b5a;
+    font-family: 'Muli', sans-serif;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 77px 32px 40px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.counter:before,
+.counter:after{
+    content: "";
+    background: #fff;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    box-shadow: -5px 5px 5px rgba(0,0,0,0.3);
+    transform: translateX(-50%)translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+.counter:after{
+    background: linear-gradient(45deg,#B81242 49%, #D74A75 50%);
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    transform: translate(0);
+    top: 0;
+    left: 0;
+    z-index: -2;
+    clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+}
+.counter .counter-icon{
+    color: #fff;
+    background: linear-gradient(45deg,#B81242 49%, #D74A75 50%);
+    font-size: 33px;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top:  0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.counter .counter-icon i.fas{
+    transform: rotateX(0deg);
+    transition: all 0.3s ease 0s;
+}
+.counter:hover .counter-icon i.fas{ transform: rotateX(360deg); }
+.counter h3{
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 3px;
+}
+.counter .counter-value{
+    font-size: 30px;
+    font-weight: 700;
+}
+.counter.orange{ color: #F38631; }
+.counter.orange:after,
+.counter.orange .counter-icon{
+    background: linear-gradient(45deg,#F38631 49%,#F8A059 50%);
+}
+.counter.green{ color: #88BA1B; }
+.counter.green:after,
+.counter.green .counter-icon{
+    background: linear-gradient(45deg,#88BA1B 49%,#ACD352 50%);
+}
+.counter.blue{ color: #5DB3E4; }
+.counter.blue:after,
+.counter.blue .counter-icon{
+    background: linear-gradient(45deg,#5DB3E4 49%,#7EBEE1 50%);
+}
+@media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
 } */
