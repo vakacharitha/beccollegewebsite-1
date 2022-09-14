@@ -317,7 +317,7 @@ a {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	margin-top: 133px;
+	margin-top: 90px;
 	background-color: #fff;
 	z-index: 2;
 	width: 300px;
@@ -359,7 +359,7 @@ a {
 	}
 }
 
-@media all and (min-width: 760px) {
+@media all and (min-width: 761px) {
 	.scl-side-bar {
 		display: none;
 	}
@@ -631,11 +631,6 @@ a {
 
 	background-position: center;
 }
-@media screen and (max-width: 990px) {
-	.counter {
-		margin-bottom: 40px;
-	}
-}
 
 /* .counter{
     color: #eb3b5a;
@@ -768,6 +763,12 @@ a {
 	}
 }
 
+@media screen and (max-width: 990px) {
+	.counter {
+		margin-bottom: 40px;
+	}
+}
+
 @media all and (max-width: 972px) {
 	.college-title1 {
 		display: flex;
@@ -839,6 +840,36 @@ a {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.border {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.border {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.border {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.border {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 200px) {
+	.border {
+		width: 100px;
+	}
+}
+
 @media all and (max-width: 425px) {
 	.header-mid-section {
 		margin-left: -30px;
@@ -869,6 +900,9 @@ a {
 	}
 	.welcometobec {
 		font-size: 18px;
+	}
+	.scl-side-bar {
+		margin-top: 137.5px;
 	}
 }
 
@@ -905,6 +939,18 @@ a {
 	}
 }
 
+@media all and (max-width: 386px) {
+	.scl-side-bar {
+		margin-top: 160px;
+	}
+}
+
+@media all and (max-width: 375px) {
+	.scl-side-bar {
+		margin-top: 133px;
+	}
+}
+
 @media all and (max-width: 350px) {
 	.header-mid-section {
 		margin-left: -30px;
@@ -936,23 +982,47 @@ a {
 	.welcometobec {
 		font-size: 14px;
 	}
+	.scl-side-bar {
+		margin-top: 131.5px;
+	}
 }
 
 @media all and (max-width: 334px) {
 	.college-title1 {
 		font-size: 18px;
 	}
+	.scl-side-bar {
+		margin-top: 130px;
+	}
 }
 
-@media all and (max-width: 314px) {
+@media all and (max-width: 315px) {
 	.college-title1 {
 		font-size: 17px;
+	}
+	.scl-side-bar {
+		margin-top: 128.5px;
+	}
+}
+
+@media all and (max-width: 315px) {
+	.college-title1 {
+		font-size: 17px;
+	}
+	.scl-side-bar {
+		margin-top: 128.5px;
+	}
+}
+
+@media all and (max-width: 311px) {
+	.scl-side-bar {
+		margin-top: 146.5px;
 	}
 }
 
 @media all and (max-width: 298px) {
-	.college-title1 {
-		font-size: 16px;
+	.scl-side-bar {
+		margin-top: 172px;
 	}
 }
 
@@ -983,5 +1053,9 @@ a {
 	}
 	.naac-pic {
 		display: none;
+	}
+	.scl-side-bar {
+		margin-top: 110.5px;
+		width: 95%;
 	}
 }
