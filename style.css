@@ -179,28 +179,21 @@
 }
 
 .scl-dropdown-menu {
-	display: flex;
-	flex-direction: column;
+	display: none;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-flow: column;
 	color: black;
 	position: absolute;
 	top: 100%;
 	left: 20%;
-	background-color: white;
-	border-radius: 2.5px;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-	opacity: 0;
-	pointer-events: none;
 	transform: translateY(-1rem);
 	transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 	z-index: 3;
-	flex-wrap: wrap;
-	height: 240px;
-	width: 500px;
 	/* glass morphism */
-	background: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.5);
 	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-	backdrop-filter: blur(2.5px);
-	-webkit-backdrop-filter: blur(2.5px);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -235,9 +228,8 @@
 }
 
 .scl-navbar-content.active + .scl-dropdown-menu {
-	opacity: 1;
+	display: grid;
 	transform: translateY(0);
-	pointer-events: auto;
 }
 
 .scl-navbar-content.active > .scl-dropdown-name,
@@ -246,7 +238,7 @@
 }
 
 .scl-navbar-content.active > .scl-dropdown-name {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .scl-dropdown-content {
@@ -731,6 +723,16 @@ a {
     .counter{ margin-bottom: 40px; }
 } */
 
+@media all and (max-width: 1350px) {
+	.scl-dropdown-menu {
+		left: 0%;
+	}
+	.welcomebec-info {
+		margin: 0;
+		margin-left: -5px;
+	}
+}
+
 @media all and (max-width: 1108px) {
 	.college-title1 {
 		font-size: 25px;
@@ -797,6 +799,9 @@ a {
 		/* height: 50px;
 		width: 80px; */
 	}
+	.welcometobec {
+		font-size: 30px;
+	}
 }
 
 @media all and (max-width: 768px) {
@@ -826,6 +831,12 @@ a {
 	.naac-pic {
 		height: 50px;
 		width: 80px;
+	}
+	.principals-message-section {
+		display: none;
+	}
+	.welcometobec {
+		font-size: 20px;
 	}
 }
 
@@ -857,6 +868,9 @@ a {
 	.naac-pic {
 		display: none;
 	}
+	.welcometobec {
+		font-size: 18px;
+	}
 }
 
 @media all and (max-width: 375px) {
@@ -887,6 +901,9 @@ a {
 	.naac-pic {
 		display: none;
 	}
+	.welcometobec {
+		font-size: 17px;
+	}
 }
 
 @media all and (max-width: 350px) {
@@ -916,6 +933,27 @@ a {
 	}
 	.naac-pic {
 		display: none;
+	}
+	.welcometobec {
+		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 334px) {
+	.college-title1 {
+		font-size: 18px;
+	}
+}
+
+@media all and (max-width: 314px) {
+	.college-title1 {
+		font-size: 17px;
+	}
+}
+
+@media all and (max-width: 298px) {
+	.college-title1 {
+		font-size: 16px;
 	}
 }
 
