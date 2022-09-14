@@ -1,1 +1,1 @@
-# BEC College Website
+# Bapatla Engineering College Website
