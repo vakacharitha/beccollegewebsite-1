@@ -76,3 +76,41 @@ function toggleScl() {
 		.querySelector(".scl-hamburger:nth-child(3)")
 		.classList.toggle("scl-hamburger3");
 }
+
+var notices = document.querySelector(".notices");
+var latestNews = document.querySelector(".latest-news");
+var campusUpdatesLatestNews = document.getElementsByClassName(
+	"campus-updates-latestNews-template "
+);
+var campusUpdatesNotices = document.getElementsByClassName(
+	"campus-updates-notices-template "
+);
+
+notices.addEventListener("click", noticeSwitcher);
+latestNews.addEventListener("click", latestNewsSwitcher);
+
+function noticeSwitcher() {
+	notices.style.backgroundColor = "var(--primary-color)";
+	notices.style.color = "#fff";
+	latestNews.style.backgroundColor = "rgba(217, 217, 217, 0.8)";
+	latestNews.style.color = "var(--text-color-black)";
+	for (let i = 0; i < campusUpdatesLatestNews.length; i++) {
+		campusUpdatesLatestNews[i].style.display = "none";
+	}
+	for (let j = 0; j < campusUpdatesNotices.length; j++) {
+		campusUpdatesNotices[j].style.display = "grid";
+	}
+}
+
+function latestNewsSwitcher() {
+	latestNews.style.backgroundColor = "var(--primary-color)";
+	latestNews.style.color = "#fff";
+	notices.style.backgroundColor = "rgba(217, 217, 217, 0.8)";
+	notices.style.color = "var(--text-color-black)";
+	for (let i = 0; i < campusUpdatesLatestNews.length; i++) {
+		campusUpdatesLatestNews[i].style.display = "grid";
+	}
+	for (let j = 0; j < campusUpdatesNotices.length; j++) {
+		campusUpdatesNotices[j].style.display = "none";
+	}
+}
