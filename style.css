@@ -461,11 +461,10 @@ a {
 	background-color: white;
 	columns: white;
 }
-.carousel-item {
-	height: 420px;
+.item {
 	background: no-repeat scroll center scroll;
 	background-size: cover;
-}
+} 
 
 .main {
 	overflow-x: hidden;
