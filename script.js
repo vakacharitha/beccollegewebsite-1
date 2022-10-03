@@ -77,6 +77,25 @@ function toggleScl() {
 		.classList.toggle("scl-hamburger3");
 }
 
+window.onscroll = function () {
+	var w = window.innerWidth;
+	if (w > 760) {
+		myFunction();
+	}
+};
+
+function myFunction() {
+	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		document.querySelector(".header").style.position = "relative";
+		document.querySelector(".scl-navbar-menu").style.position = "fixed";
+		document.querySelector(".scl-navbar-menu").style.padding = "0px";
+	} else {
+		document.querySelector(".header").style.position = "sticky";
+		document.querySelector(".scl-navbar-menu").style.position = "relative";
+		document.querySelector(".scl-navbar-menu").style.padding = "20px";
+	}
+}
+
 var notices = document.querySelector(".notices");
 var latestNews = document.querySelector(".latest-news");
 var campusUpdatesLatestNews = document.getElementsByClassName(
@@ -114,3 +133,74 @@ function latestNewsSwitcher() {
 		campusUpdatesNotices[j].style.display = "none";
 	}
 }
+
+var marqueeClsBtn = document.querySelector(".marquee-close-btn");
+var marquee = document.querySelector(".notice-marquee");
+
+marqueeClsBtn.addEventListener("click", marqueeCls);
+
+function marqueeCls() {
+	marquee.style.display = "none";
+}
+
+const observer = new IntersectionObserver(
+	(entries) => {
+		entries.forEach((entry) => {
+			console.log(entry);
+			if (entry.isIntersecting) {
+				entry.target.classList.add("show");
+			} else {
+				entry.target.classList.remove("show");
+			}
+		});
+	},
+	{
+		rootMargin: "-20px",
+		threshold: 1,
+	}
+);
+
+const hiddenElements = document.querySelectorAll(".seperator");
+hiddenElements.forEach((el) => observer.observe(el));
+
+const observer2 = new IntersectionObserver(
+	(entries) => {
+		entries.forEach((entry) => {
+			console.log(entry);
+			if (entry.isIntersecting) {
+				entry.target.classList.add("show-welcometobec");
+			} else {
+				entry.target.classList.remove("show-welcometobec");
+			}
+		});
+	},
+	{
+		rootMargin: "-20px",
+		threshold: 0.2,
+	}
+);
+
+const hiddenElements2 = document.querySelectorAll(".welcomebec-info");
+hiddenElements2.forEach((el) => observer2.observe(el));
+
+const observer3 = new IntersectionObserver(
+	(entries) => {
+		entries.forEach((entry) => {
+			console.log(entry);
+			if (entry.isIntersecting) {
+				entry.target.classList.add("show-principalMessage");
+			} else {
+				entry.target.classList.remove("show-principalMessage");
+			}
+		});
+	},
+	{
+		rootMargin: "-20px",
+		threshold: 0.1,
+	}
+);
+
+const hiddenElements3 = document.querySelectorAll(
+	".principals-message-section"
+);
+hiddenElements3.forEach((el) => observer3.observe(el));

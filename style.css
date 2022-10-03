@@ -194,8 +194,8 @@ a {
 }
 
 .scl-dropdown-name-phone {
-	background-color: #fff;
-	color: #000;
+	background-color: transparent;
+	color: var(--primary-color);
 	font-size: 30px;
 	border: none;
 	margin: 10px 0 0 10px;
@@ -282,6 +282,13 @@ a {
 	border-left: 2px solid #d7d7d7;
 	animation: speed 500ms ease-in-out;
 	box-shadow: 0.75em 2em 6em rgba(0, 0, 0, 0.3);
+	/* glass morphism */
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 @keyframes speed {
@@ -393,6 +400,20 @@ a {
 	width: 100%;
 }
 
+.marquee-close-btn {
+	height: 30px;
+	width: 30px;
+	border-radius: 90px;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	left: 95%;
+	bottom: 4%;
+	background-color: #fff;
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
 .notice-marquee-content {
 	font-size: 20px;
 	animation: noticeMarqueeContent 60s infinite;
@@ -464,11 +485,15 @@ a {
 .item {
 	background: no-repeat scroll center scroll;
 	background-size: cover;
-} 
+}
 
 .main {
 	overflow-x: hidden;
 }
+
+/* .welcometobecsection {
+	overflow-x: hidden;
+} */
 
 .welcometobec {
 	display: flex;
@@ -478,12 +503,36 @@ a {
 	font-size: var(--desktop-heading-fontsize);
 }
 .welcomebec-info {
+	opacity: 0;
 	text-align: justify;
 	text-justify: inter;
 	hyphens: auto;
 	font-size: var(--desktop-bodytext-fontsize);
 	font-weight: 400;
-	margin: 0 70px 0 -90px;
+	margin: 0 70px 0 -40px;
+	transition: all 2s;
+	filter: blur(5px);
+	transform: translate(-40%);
+}
+
+.show-welcometobec {
+	opacity: 1;
+	filter: blur(0px);
+	transform: translateX(0);
+}
+
+.principals-message-section {
+	opacity: 0;
+	transition: all 2s;
+	filter: blur(5px);
+	transform: translate(10%);
+	overflow-x: hidden;
+}
+
+.show-principalMessage {
+	opacity: 1;
+	filter: blur(0px);
+	transform: translateX(0);
 }
 
 .principals-message-heading {
@@ -503,11 +552,19 @@ a {
 }
 
 .seperator {
+	opacity: 0;
+	/* display: none; */
+	/* transition: all 3s; */
 	width: 60px;
 	height: 4px;
 	background-color: #0061b0;
-	margin: 10px 0 10px 0;
-	animation: lineH 1s ease-in;
+	/* margin: 10px 0 10px 0; */
+}
+
+.show {
+	opacity: 1;
+	/* transition: all 3s; */
+	animation: lineH 1.5s ease-in;
 }
 
 @keyframes lineH {
@@ -885,6 +942,9 @@ a {
 	}
 	.campus-updates {
 		margin: 0 10px 0 10px;
+	}
+	.marquee-close-btn {
+		left: 90%;
 	}
 }
 
