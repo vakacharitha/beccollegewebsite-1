@@ -146,7 +146,6 @@ function marqueeCls() {
 const observer = new IntersectionObserver(
 	(entries) => {
 		entries.forEach((entry) => {
-			console.log(entry);
 			if (entry.isIntersecting) {
 				entry.target.classList.add("show");
 			} else {
@@ -166,7 +165,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 const observer2 = new IntersectionObserver(
 	(entries) => {
 		entries.forEach((entry) => {
-			console.log(entry);
 			if (entry.isIntersecting) {
 				entry.target.classList.add("show-welcometobec");
 			} else {
@@ -176,7 +174,7 @@ const observer2 = new IntersectionObserver(
 	},
 	{
 		rootMargin: "-20px",
-		threshold: 0.2,
+		threshold: 0.1,
 	}
 );
 
@@ -186,7 +184,6 @@ hiddenElements2.forEach((el) => observer2.observe(el));
 const observer3 = new IntersectionObserver(
 	(entries) => {
 		entries.forEach((entry) => {
-			console.log(entry);
 			if (entry.isIntersecting) {
 				entry.target.classList.add("show-principalMessage");
 			} else {
@@ -204,3 +201,50 @@ const hiddenElements3 = document.querySelectorAll(
 	".principals-message-section"
 );
 hiddenElements3.forEach((el) => observer3.observe(el));
+
+var galleryTemplate = document.querySelectorAll(".gallery-template");
+var galleryArray = [...galleryTemplate];
+galleryArray.forEach((element, index) =>
+	element.addEventListener("mouseover", function mouseOver() {
+		for (j = 0; j < galleryArray.length; j++) {
+			if (![index].includes(j)) {
+				galleryArray[j].style.opacity = "0.3";
+				galleryArray[j].style.transition = "opacity 0.25s ease-in-out 0s";
+				galleryArray[j].style.cursor = "pointer";
+			} else {
+				galleryArray[j].style.opacity = "1";
+			}
+		}
+	})
+);
+
+galleryArray.forEach((element) =>
+	element.addEventListener("mouseout", function mouseOut() {
+		for (k = 0; k < galleryArray.length; k++) {
+			galleryArray[k].style.opacity = "1";
+		}
+	})
+);
+
+var galleryPic = document.querySelectorAll(".gallery-pic");
+var galleryPicArray = [...galleryPic];
+galleryArray.forEach((element, index) =>
+	element.addEventListener("click", function helooo() {
+		for (j = 0; j < galleryArray.length; j++) {
+			if (![index].includes(j)) {
+				galleryPicArray[j].style.height = "300px";
+				galleryPicArray[j].style.width = "500px";
+				galleryPicArray[j].style.zIndex = "1";
+				galleryPicArray[j].style.position = "relative";
+				galleryPicArray[j].style.cursor = "pointer";
+			} else {
+				galleryPicArray[j].style.position = "sticky";
+				galleryPicArray[j].style.height = "600px";
+				galleryPicArray[j].style.width = "800px";
+				galleryPicArray[j].style.objectFit = "contain";
+				galleryPicArray[j].style.zIndex = "100";
+				galleryPicArray[j].style.cursor = "default";
+			}
+		}
+	})
+);
