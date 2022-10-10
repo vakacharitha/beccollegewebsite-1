@@ -17,6 +17,8 @@ $(document).ready(function () {
 	});
 });
 
+//drop down menu - desktop
+
 document.addEventListener("click", (e) => {
 	const isDropdownButton = e.target.matches("[data-dropdown-button]");
 	if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return;
@@ -32,6 +34,8 @@ document.addEventListener("click", (e) => {
 		dropdown.classList.remove("active");
 	});
 });
+
+//drop down menu - phone
 
 document.addEventListener("click", (e) => {
 	const isDropdownButtonPhone = e.target.matches(
@@ -77,6 +81,8 @@ function toggleScl() {
 		.classList.toggle("scl-hamburger3");
 }
 
+//header resize on scroll in desktop
+
 window.onscroll = function () {
 	var w = window.innerWidth;
 	if (w > 760) {
@@ -95,6 +101,8 @@ function myFunction() {
 		document.querySelector(".scl-navbar-menu").style.padding = "20px";
 	}
 }
+
+//notice and events switcher
 
 var notices = document.querySelector(".notices");
 var latestNews = document.querySelector(".latest-news");
@@ -134,6 +142,8 @@ function latestNewsSwitcher() {
 	}
 }
 
+//maruqee at the bottom
+
 var marqueeClsBtn = document.querySelector(".marquee-close-btn");
 var marquee = document.querySelector(".notice-marquee");
 
@@ -142,6 +152,8 @@ marqueeClsBtn.addEventListener("click", marqueeCls);
 function marqueeCls() {
 	marquee.style.display = "none";
 }
+
+//intersection observer for line in principals section
 
 const observer = new IntersectionObserver(
 	(entries) => {
@@ -162,6 +174,8 @@ const observer = new IntersectionObserver(
 const hiddenElements = document.querySelectorAll(".seperator");
 hiddenElements.forEach((el) => observer.observe(el));
 
+//intersection observer welcome to bec section
+
 const observer2 = new IntersectionObserver(
 	(entries) => {
 		entries.forEach((entry) => {
@@ -181,6 +195,8 @@ const observer2 = new IntersectionObserver(
 const hiddenElements2 = document.querySelectorAll(".welcomebec-info");
 hiddenElements2.forEach((el) => observer2.observe(el));
 
+//intersection observer principal's section
+
 const observer3 = new IntersectionObserver(
 	(entries) => {
 		entries.forEach((entry) => {
@@ -196,6 +212,8 @@ const observer3 = new IntersectionObserver(
 		threshold: 0.1,
 	}
 );
+
+//mouse hover for gallery section
 
 const hiddenElements3 = document.querySelectorAll(
 	".principals-message-section"
@@ -226,25 +244,34 @@ galleryArray.forEach((element) =>
 	})
 );
 
-var galleryPic = document.querySelectorAll(".gallery-pic");
-var galleryPicArray = [...galleryPic];
-galleryArray.forEach((element, index) =>
-	element.addEventListener("click", function helooo() {
-		for (j = 0; j < galleryArray.length; j++) {
-			if (![index].includes(j)) {
-				galleryPicArray[j].style.height = "300px";
-				galleryPicArray[j].style.width = "500px";
-				galleryPicArray[j].style.zIndex = "1";
-				galleryPicArray[j].style.position = "relative";
-				galleryPicArray[j].style.cursor = "pointer";
-			} else {
-				galleryPicArray[j].style.position = "sticky";
-				galleryPicArray[j].style.height = "600px";
-				galleryPicArray[j].style.width = "800px";
-				galleryPicArray[j].style.objectFit = "contain";
-				galleryPicArray[j].style.zIndex = "100";
-				galleryPicArray[j].style.cursor = "default";
-			}
-		}
-	})
-);
+//when a pic in gallery is clicked
+
+// var galleryPic = document.querySelectorAll(".gallery-pic");
+// var galleryPicArray = [...galleryPic];
+// galleryArray.forEach((element, index) =>
+// 	element.addEventListener("click", function helooo() {
+// 		for (l = 0; l < galleryArray.length; l++) {
+// 			if (![index].includes(l)) {
+// 				console.log(l + " is not active");
+// 				galleryArray[l].style.scale = "1";
+// 				galleryArray[l].style.display = "relative";
+// 				galleryArray[l].style.minHeight = "default";
+// 				galleryArray[l].style.minWidth = "default";
+// 				galleryArray[l].style.zIndex = "1";
+// 			} else {
+// 				console.log(l + " is  active");
+// 				galleryArray[l].style.transform = "translateY(calc(50vh))";
+// 				galleryArray[l].style.transform = "translate3d(30vh,20vh, 0vw)";
+// 				galleryArray[l].style.position = "absolute";
+// 				galleryArray[l].style.display = "flex";
+// 				galleryArray[l].style.flexDirection = "column";
+// 				galleryArray[l].style.justifyContent = "center";
+// 				galleryArray[l].style.alignItems = "center";
+// 				galleryArray[l].style.minHeight = "100vh";
+// 				galleryArray[l].style.minWidth = "10vw";
+// 				galleryArray[l].style.zIndex = "5";
+// 				galleryArray[l].style.scale = "1.5";
+// 			}
+// 		}
+// 	})
+// );
