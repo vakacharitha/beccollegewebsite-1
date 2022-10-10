@@ -510,7 +510,7 @@ a {
 	font-size: var(--desktop-bodytext-fontsize);
 	font-weight: 400;
 	margin: 0 70px 0 -40px;
-	transition: all 2s;
+	transition: all 3s;
 	filter: blur(5px);
 	transform: translate(-40%);
 }
@@ -523,9 +523,9 @@ a {
 
 .principals-message-section {
 	opacity: 0;
-	transition: all 2s;
+	transition: all 3s;
 	filter: blur(5px);
-	transform: translate(10%);
+	transform: translate(5%);
 	overflow-x: hidden;
 }
 
@@ -708,7 +708,7 @@ a {
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-	margin: 10px 100px 10px 100px;
+	margin: 10px 100px 30px 100px;
 }
 .campus-updates-tabs {
 	display: flex;
@@ -734,9 +734,6 @@ a {
 
 .campus-updates-latestNews-info {
 	border: 5px solid var(--primary-color);
-	margin-bottom: 100px;
-	/* height: 100px;
-	width: 100px; */
 	font-size: var(--desktop-bodytext-fontsize);
 }
 
@@ -760,9 +757,6 @@ a {
 	font-size: var(--desktop-side-heading-fontsize);
 	font-weight: 400;
 	margin: 20px 0 20px 0;
-	/* white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis; */
 }
 
 .campus-updates-latestNews-template-heading {
@@ -770,9 +764,6 @@ a {
 	color: var(--primary-color);
 	font-size: var(--desktop-side-heading-fontsize);
 	font-weight: 500;
-	/* white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis; */
 }
 
 .campus-updates-latestNews-template-info {
@@ -819,11 +810,71 @@ a {
 	display: flex;
 	justify-content: flex-end;
 	color: var(--primary-color);
+	font-size: var(--desktop-side-heading-fontsize);
 }
 
 .campus-updates-viewMore a {
 	text-decoration: none;
 	margin: 0 50px 10px 0;
+}
+
+.gallery-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery-heading {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: var(--desktop-heading-fontsize);
+	color: var(--primary-color);
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.gallery-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-items: center;
+	justify-content: center;
+}
+
+.gallery-template {
+	display: flex;
+	flex-direction: column;
+	max-width: max-content;
+	margin: 30px 30px 30px 30px;
+	max-width: 500px;
+}
+
+.gallery-pic {
+	width: 500px;
+	height: 300px;
+}
+
+.gallery-pic-heading {
+	font-size: var(--desktop-side-heading-fontsize);
+	font-weight: 500;
+	max-width: max-content;
+}
+
+.gallery-pic-description {
+	font-size: var(--desktop-bodytext-fontsize);
+}
+
+.gallery-viewMore {
+	font-size: var(--desktop-side-heading-fontsize);
+	color: var(--primary-color);
+	position: relative;
+	left: 30%;
+	margin-top: -20px;
+}
+
+.gallery-viewMore a {
+	text-decoration: none;
 }
 
 @media all and (max-width: 1350px) {
@@ -952,6 +1003,16 @@ a {
 	.border {
 		width: 500px;
 	}
+	.gallery-template {
+		margin: 30px 2px 30px 2px;
+	}
+	.gallery-pic {
+		display: flex;
+		margin-right: auto;
+		margin-right: auto;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -962,17 +1023,66 @@ a {
 	.campus-updates-latestNews-date-placeholder {
 		/* display: none; */
 	}
+	.gallery-pic {
+		height: 400px;
+		width: 400px;
+		object-fit: contain;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	.gallery-template {
+		margin-top: -80px;
+	}
+	.gallery-pic-heading {
+		margin-top: -80px;
+	}
 }
 
 @media screen and (max-width: 400px) {
 	.border {
 		width: 300px;
 	}
+	.gallery-pic {
+		height: 300px;
+		width: 300px;
+	}
+	.gallery-template {
+		margin-top: -60px;
+		/* margin-left: 5px;
+		margin-right: 0px; */
+	}
+	.gallery-pic-heading {
+		margin-top: -60px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.principals-message-photo-phone {
+		height: 250px;
+		width: 250px;
+	}
+	.gallery-template {
+		/* margin-left: 0px;
+		margin-right: 0px; */
+	}
 }
 
 @media screen and (max-width: 300px) {
 	.border {
 		width: 200px;
+	}
+	.gallery-pic {
+		height: 270px;
+		width: 270px;
+	}
+	.gallery-template {
+		/* margin-left: 0px;
+		margin-right: 0px; */
+	}
+	.gallery-pic-heading {
+		margin-top: -60px;
 	}
 }
 
