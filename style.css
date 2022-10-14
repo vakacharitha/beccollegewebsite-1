@@ -129,6 +129,7 @@
 	font-weight: 500;
 	width: max-content;
 }
+
 .scl-navbar-content {
 	position: relative;
 }
@@ -368,6 +369,7 @@ a {
 	display: block;
 	z-index: 100000;
 }
+
 .rum_sst_right {
 	right: -1px;
 	cursor: pointer;
@@ -480,7 +482,6 @@ a {
 	background-color: white;
 	columns: white;
 }
-
 .item {
 	background: no-repeat scroll center scroll;
 	background-size: cover;
@@ -668,27 +669,7 @@ a {
 	background: linear-gradient(to bottom, #0060b1 49%, transparent 50%);
 	border-color: #0060b1;
 }
-@media all and (max-width:1024px){
-	.counter{
-	width: 110px;
-	height: 110px;
-	padding: 2px 15px 5px;
-	border: 5px solid #0060b1;
-	}
-	.counter .counter-value {
-		color: #fff;
-		font-size: 15px;
-		font-weight: 600;
-		margin: 0 0 35px;
-	}
-	.counter h3 {
-		font-size: 11px;
-		font-weight: 600px;
-		text-transform: uppercase;
-		margin-right: 5px;
-	}
-}
-/* Vision-Mission css*/
+
 .border {
 	padding: 10px;
 	padding-top: 0%;
@@ -702,6 +683,7 @@ a {
 	font-weight: 500;
 	font-size: var(--desktop-bodytext-fontsize);
 }
+
 .e {
 	height: 50px;
 }
@@ -709,68 +691,6 @@ a {
 	background-image: url(./images/v-m.jpg);
 
 	background-position: center;
-}
-/*Carousel css */
-.container-fluid{
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-	/* width: max-content !important; */
-}
-@media all and (max-width:1024px){
-	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
-		display: block;
-		max-width: 100%;
-		height: 170px !important;
-	}
-}
-/*Footer css */
-.footer{
-	display: flex;
-	font-size: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #00447E;
-	color: white;
-	justify-content: center;
-}
-.footer a{
-	padding: 3px;
-}
-.QuickLinks, .StatutoryDataandCommittees, .GetInTouch{
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	width: 300px;
-	padding: 25px;
-}
-.QuickLinks a:hover, .StatutoryDataandCommittees a:hover, .GetInTouch a:hover{
-	color: #0060b1;
-}
-.QuickLinks>div{
-	font-weight: bold;
-	color: #ffa07a;
-}
-.QuickLinks i, .StatutoryDataandCommittees i, .GetInTouch i {
-	padding-right: 6px;
-}
-.StatutoryDataandCommittees>div{
-	font-weight: bold;
-	color: #ffa07a;
-}
-.GetInTouch>div{
-	font-weight: bold;
-	color: #ffa07a;
-}
-@media all and (max-width:1024px) {
-	.footer{
-		font-size: 15px;
-		padding-left: 10px;
-		flex-direction: column;
-	}
-	iframe{
-		width: 250px;
-		height: 150px;
-	}
 }
 
 .campus-updates-heading {
