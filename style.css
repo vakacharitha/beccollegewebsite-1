@@ -926,6 +926,9 @@ a {
 	font-weight: bold;
 	color: #ffa07a;
 }
+.FollowUsIcons{
+	font-size: larger;
+}
 @media all and (max-width:1024px) {
 	.footer{
 		font-size: 15px;
@@ -985,7 +988,7 @@ a {
 
 @media screen and (max-width: 990px) {
 	.counter {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -1080,9 +1083,6 @@ a {
 		width: 400px;
 		/* text-align: start; */
 	}
-	.campus-updates-latestNews-date-placeholder {
-		/* display: none; */
-	}
 	.gallery-pic {
 		height: 400px;
 		width: 400px;
@@ -1122,10 +1122,6 @@ a {
 	.principals-message-photo-phone {
 		height: 250px;
 		width: 250px;
-	}
-	.gallery-template {
-		/* margin-left: 0px;
-		margin-right: 0px; */
 	}
 }
 
