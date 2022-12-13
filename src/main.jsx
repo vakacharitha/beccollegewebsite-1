@@ -16,7 +16,6 @@ const StaffD = staffData.map((item) => {
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<>
 		<Header />
-		<Navbar />
 		<ExamHeader />
 		<div className="staff-container grid  grid-flow-row justify-center gap-6 mt-2 mb-2 md:grid-cols-2 md:justify-items-center lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
 			{StaffD}
