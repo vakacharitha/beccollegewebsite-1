@@ -26,7 +26,7 @@ let Header = () => {
 				</div>
 			</div>
 			<img
-				className="college-logo hidden md:block md:h-20 md:-mt-4 md:mr-4 xl:h-28 xl:mr-4 xl:-mt-4"
+				className="college-logo hidden md:block md:h-20 md:-mt-4 md:mr-4 xl:h-32 xl:mr-4 xl:mt-2"
 				src={no1}
 			></img>
 		</header>
