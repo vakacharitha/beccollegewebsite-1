@@ -1,6 +1,6 @@
 import downArrow from "/src/assets/angle-down-solid.svg";
 import React from "react";
-
+import IT from "/src/pages/departments/IT.jsx";
 let navbar = () => {
 	const [dropdown1, setDropDown1] = React.useState("");
 
@@ -9,6 +9,9 @@ let navbar = () => {
 	}
 
 	return (
+		// <>
+		// 	<h1>Navbar starting</h1>
+		// </>
 		<nav className="bg-primary w-full h-10 -mt-2 flex items-center">
 			<div
 				data-id="1"

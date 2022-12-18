@@ -1,15 +1,19 @@
 import ExamHeader from "/src/components/examheader/examheader.jsx";
 import { Route, Routes, Link } from "react-router-dom";
-import Exampages from "/src/pages/examsResults/examination.jsx";
+import Staff from "/src/components/staff/staff.jsx";
+import staffData from "/src/Data/staffData/examinationCell/staffData.js";
+
+const StaffD = staffData.map((dataArg) => {
+	return <Staff key={dataArg.staffId} item={dataArg} />;
+});
 
 export default function exampages() {
 	return (
 		<>
 			<ExamHeader />
-			<Routes>
-				<Route path="/exam" element={<ExamHeader />} />
-				<Route path="/books" element={<Exampages />} />
-			</Routes>
+			<div className="staff-container grid grid-flow-row justify-center gap-6 mt-2 mb-2 md:grid-cols-2 md:justify-items-center lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+				{StaffD}
+			</div>
 		</>
 	);
 }
