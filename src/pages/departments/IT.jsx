@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function exampages() {
+export default function exampagess() {
 	return (
 		<>
 			<h3>deperments bruv </h3>

@@ -1,6 +1,6 @@
 import banner from "/src/assets/banner.png";
 
-function examHeader() {
+function examHeader(props) {
 	return (
 		<header className="exam-header">
 			<img
@@ -8,7 +8,7 @@ function examHeader() {
 				src={banner}
 			></img>
 			<div className="banner-name text-white text-base font-medium relative bottom-10 ml-6 md:bottom-12 md:ml-10 lg:ml-14 xl:ml-24 xl:bottom-24 xl:text-3xl">
-				Examination Section
+				{props.bannerName}
 			</div>
 		</header>
 	);

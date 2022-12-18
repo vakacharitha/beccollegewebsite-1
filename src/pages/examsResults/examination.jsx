@@ -10,7 +10,7 @@ const StaffD = staffData.map((dataArg) => {
 export default function exampages() {
 	return (
 		<>
-			<ExamHeader />
+			<ExamHeader bannerName="Examination Cell" />
 			<div className="staff-container grid grid-flow-row justify-center gap-6 mt-2 mb-2 md:grid-cols-2 md:justify-items-center lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
 				{StaffD}
 			</div>
