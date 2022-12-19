@@ -1,0 +1,74 @@
+.Training-Placements-Menu{
+	font-size: larger;
+	color:#0060b1 ;
+	margin-left: 45px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.Objective, .Functions, .WeareHonest, .TrainingAndPlacementsTeam, .notifications, .TrainingRegistration, .PlacementGallery{
+	font-size: larger;
+	color:#0060b1 ;
+	font-weight: bold;
+}
+.nav-link{
+	background-color:#0060b1 ;
+	color: white;
+	padding: 5px;
+	width: 300px;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-left: 40px;
+	text-align: center;
+	border-radius: 5px;
+}
+.nav-link:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	color: white;
+}
+.Menu>div{
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.Recruiters{
+    width: 200px;
+    height: 100px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    display: flex;
+    font-weight: bold;
+    color: white;
+	align-items: center;
+	justify-content: center;
+	font-size: large;
+}
+.marqueeplacementimages{
+	width: 100%;
+}
+form{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.marquee{
+	display: inline-flex;
+}
+@media all and (max-width:768px) {
+	.Recruiters{
+		width: 100px;
+		height: 70px;
+		clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+		display: flex;
+		font-weight: bold;
+		color: white;
+		align-items: center;
+		justify-content: center;
+		font-size: 12px;
+	}
+	.marquee>img{
+		width: 70px;
+		height: 70px;
+	}
+	.Recruitersdiv{
+		height: 70px;
+	}
+}
