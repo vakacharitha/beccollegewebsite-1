@@ -1,0 +1,25 @@
+import Header from "/src/components/header/header.jsx";
+
+import { Outlet, Link } from "react-router-dom";
+
+export default function Root() {
+	return (
+		<>
+			<Header />
+			<button>
+				<Link className=" m-2 p-2 border-2 border-black" to={"/departments"}>
+					Placements
+				</Link>
+			</button>
+			<button>
+				<Link
+					className=" m-2 p-2 border-2 border-black"
+					to={"/examination-cell"}
+				>
+					Exams and results
+				</Link>
+			</button>
+			<Outlet />
+		</>
+	);
+}
