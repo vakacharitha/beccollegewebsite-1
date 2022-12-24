@@ -1,4 +1,5 @@
 import Header from "/src/components/header/header.jsx";
+import Footer from "/src/components/footer/footer.jsx";
 
 import { Outlet, Link } from "react-router-dom";
 
@@ -20,6 +21,7 @@ export default function Root() {
 				</Link>
 			</button>
 			<Outlet />
+			<Footer />
 		</>
 	);
 }

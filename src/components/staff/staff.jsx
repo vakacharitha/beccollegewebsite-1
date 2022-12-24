@@ -1,4 +1,4 @@
-import emailPic from "/src/assets/Envelope.png";
+import emailPic from "/src/assets/icons/Envelope.png";
 
 let staff = (props) => {
 	const { item } = props;
@@ -22,7 +22,7 @@ let staff = (props) => {
 						<img className="h-6" src={emailPic}></img>
 						<a
 							className="text-primary font-medium underline underline-offset-2"
-							href={item.staffEMail}
+							href="mailto: + {item.staffEMail}"
 						>
 							Send email
 						</a>
