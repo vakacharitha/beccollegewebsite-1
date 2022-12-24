@@ -66,6 +66,7 @@ export default function footerWrapper() {
 					<div className="location mb-3">
 						<a>
 							<iframe
+								className="w-60 xs:w-72 sm:w-80"
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.3590539151496!2d80.43984695033782!3d15.89024948893766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a408f042c3c75%3A0x3aa398870aa48578!2sBapatla%20Engineering%20College!5e0!3m2!1sen!2sin!4v1664966910989!5m2!1sen!2sin"
 								width="300"
 								height="200"
