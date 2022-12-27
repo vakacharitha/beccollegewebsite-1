@@ -20,6 +20,14 @@ export default function Root() {
 					Exams and results
 				</Link>
 			</button>
+			<button>
+				<Link
+					className=" m-2 p-2 border-2 border-black"
+					to={"/exam-notifications"}
+				>
+					Exam notifications
+				</Link>
+			</button>
 			<Outlet />
 			<Footer />
 		</>
