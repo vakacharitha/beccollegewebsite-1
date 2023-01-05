@@ -7,6 +7,9 @@ import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
+import Placements from "/src/pages/Placements/placements.jsx";
+import YearWisePlacements from "/src/pages/Placements/YearWisePlacements";
+import BranchWisePlacements from "/src/pages/Placements/BranchWisePlacements";
 
 const router = createBrowserRouter([
 	{
@@ -16,8 +19,8 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, element: <Homepage /> },
 			{
-				path: "/departments",
-				element: <It />,
+				path: "/Placements",
+				element: <Placements />,
 			},
 			{
 				path: "/examination-cell",
@@ -26,6 +29,14 @@ const router = createBrowserRouter([
 			{
 				path: "/exam-notifications",
 				element: <ExamNotifs />,
+			},
+			{
+				path: "/YearWise-Placements",
+				element: <YearWisePlacements />,
+			},
+			{
+				path: "/BranchWise-Placements",
+				element: <BranchWisePlacements />,
 			},
 		],
 	},
