@@ -1,11 +1,14 @@
-.Training-Placements-Menu{
+.Training-Placements-Menu, .YearWise-Placements-Menu, .BranchWise-Placements-Menu{
 	font-size: larger;
 	color:#0060b1 ;
 	margin-left: 45px;
 	margin-bottom: 15px;
 	font-weight: bold;
 }
-.Objective, .Functions, .WeareHonest, .TrainingAndPlacementsTeam, .notifications, .TrainingRegistration, .PlacementGallery{
+.aboutplacements, .Objective, .Functions, .WeareHonest, .TrainingAndPlacementsTeam, .notifications, .TrainingRegistration, .PlacementGallery,
+.Placements2022-2023, .Placements2021-2022, .Placements2020-2021, .Placements2019-2020, .Placements2018-2019, .Placements2017-2018, 
+.Placements2016-2017, .Placements2015-2016, .Placements2014-2015, .Placements2013-2014
+{
 	font-size: larger;
 	color:#0060b1 ;
 	font-weight: bold;
@@ -32,7 +35,7 @@
 }
 .Recruiters{
     width: 200px;
-    height: 100px;
+    height: 102px;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     display: flex;
     font-weight: bold;
@@ -52,7 +55,58 @@ form{
 .marquee{
 	display: inline-flex;
 }
+.canvasjs-chart-credit{
+	display: none;
+}
+@media all and (max-width:320px) {
+#chartContainer{
+	width: 10%;
+}
+}
+/* Table */
+.scroll-thead{
+    width: 100%;
+    display: inline-table;
+}
+.scroll-tbody-y
+{
+    display: block;
+    overflow-y: scroll;
+	width: 100%;
+}
+.table-body{
+    height: 300px;
+	width: 100%;
+}
+.table-striped>tbody>tr:nth-child(odd){
+	background-color:#0060b1;
+	color: white;
+ }
+ .table-striped>tbody>tr:nth-child(even){
+	background-color:white;
+	color: black;
+ }
+ .apexcharts-zoom-icon, .apexcharts-legend-series, .apexcharts-zoomin-icon,.apexcharts-legend-text, .apexcharts-zoomout-icon ,.apexcharts-element-hidden, .apexcharts-reset-icon, .apexcharts-pan-icon{
+	display: none;
+ }
+ .BarChart{
+	width: 60%;
+	height:50%;
+	border: 3px solid #0060b1;
+ }
 @media all and (max-width:768px) {
+	.placementmenuitems, .YearWiseplacementmenuitems, .BranchWiseplacementmenuitems{
+		margin-left: -29px;
+	}
+	.Training-Placements-Menu{
+		margin-bottom: -70px;
+	}
+	.YearWise-Placements-Menu, .BranchWise-Placements-Menu{
+		margin-bottom:-10px;
+	}
+	.left-navcontent{
+		margin-left: 20px;
+	}
 	.Recruiters{
 		width: 100px;
 		height: 70px;
@@ -70,5 +124,13 @@ form{
 	}
 	.Recruitersdiv{
 		height: 70px;
+	}
+	.marqueeplacementimages>img{
+		height: 70px;
+	}
+}
+@media all and (min-width:1465px) {
+	.row{
+		flex-wrap: nowrap;
 	}
 }
