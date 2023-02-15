@@ -7,6 +7,8 @@ import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
+import Naac from "/src/pages/saturaotryData/aicte.jsx"
+import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
 
 const router = createBrowserRouter([
 	{
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
 			{
 				path: "/exam-notifications",
 				element: <ExamNotifs />,
+			},
+			{
+				path: "/naac",
+				element: <NaacHome />,
+			},
+			{
+				path: "/naacInfo",
+				element: <Naac />,
 			},
 		],
 	},

@@ -28,6 +28,14 @@ export default function Root() {
 					Exam notifications
 				</Link>
 			</button>
+			<button>
+				<Link
+					className=" m-2 p-2 border-2 border-black"
+					to={"/naac"}
+				>
+					NAAC
+				</Link>
+			</button>
 			<Outlet />
 			<Footer />
 		</>
