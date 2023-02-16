@@ -20,7 +20,7 @@ let staff = (props) => {
 				{item.staffEmail && (
 					<div className="staff-email flex items-center flex-wrap">
 						<img className="h-6" src={emailPic}></img>
-						<a
+						<a	
 							className="text-primary font-medium underline underline-offset-2"
 							href="mailto: + {item.staffEMail}"
 						>

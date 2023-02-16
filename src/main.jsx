@@ -11,6 +11,9 @@ import It from "/src/pages/departments/IT.jsx";
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
+import Placements from "/src/pages/Placements/placements.jsx";
+import YearWisePlacements from "/src/pages/Placements/YearWisePlacements";
+import BranchWisePlacements from "/src/pages/Placements/BranchWisePlacements";
 
 const router = createBrowserRouter([
 	{
@@ -20,8 +23,8 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, element: <Homepage /> },
 			{
-				path: "/departments",
-				element: <It />,
+				path: "/Placements",
+				element: <Placements />,
 			},
 			{
 				path: "/examination-cell",
@@ -42,6 +45,14 @@ const router = createBrowserRouter([
 			{
 				path: "/exam-results",
 				element: <ExamResults />,
+			},
+			{
+				path: "/YearWise-Placements",
+				element: <YearWisePlacements />,
+			},
+			{
+				path: "/BranchWise-Placements",
+				element: <BranchWisePlacements />,
 			},
 		],
 	},
