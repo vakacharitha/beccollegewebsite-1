@@ -1,0 +1,29 @@
+
+  .form-container > form {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  label{
+    display: block;
+    padding: 10px;
+    font-weight: 600;
+  }
+  input{
+    display: block;
+    margin-bottom: 12px;
+  }
+  .submit {
+    background: #0563b4 !important;
+    margin-top: 10px;
+    margin-left: 80px;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+  }
+  p {
+    color: red;
+  }
