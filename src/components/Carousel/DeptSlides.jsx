@@ -1,33 +1,26 @@
-import BecDetails from '/src/assets/BecDetails.jpg';
-import culturalFest from '/src/assets/culturalFest.jpg'
-import Devops from '/src/assets/Devops.jpg'
-import EngineersDay from '/src/assets/EngineersDay.jpg';
-import robotics from '/src/assets/robotics.jpg'
-import bectagon from '/src/assets/bectagon.jpg'
+import Workshop from '/src/assets/Workshop.jpeg';
+import Bigdata from '/src/assets/Bigdata.jpg';
+import Labs from '/src/assets/Labs.jpg'
+import CCLabs from '/src/assets/CCLabs.jpg'
 
-function Slider(){
+
+function DeptSlides(){
     return(
         <>
 <div id="default-carousel" className="relative mt-3" data-carousel="slide">
     <div className="relative h-40 overflow-hidden md:h-96">
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <span className="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-            <img src={BecDetails} className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <img src={Workshop} className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={Devops} className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <img src={Bigdata} className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={EngineersDay} className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <img src={Labs} className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={robotics} className="absolute block lg:h-96 w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={culturalFest} className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={bectagon} className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <img src={CCLabs} className="absolute block lg:h-96 w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
         </div>
     </div>
     <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -35,8 +28,6 @@ function Slider(){
         <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
         <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
         <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
     </div>
     <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
         <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -55,4 +46,4 @@ function Slider(){
         </>
     )
 }
-export default Slider
+export default DeptSlides

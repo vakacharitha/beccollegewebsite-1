@@ -3,6 +3,9 @@ import {Link} from 'react-router-dom';
 import Placementsteam from '../../Data/Placementsteam.js';
 import Staff from "/src/components/staff/staff.jsx";
 import Slides from "/src/components/Carousel/Slides.jsx"
+import RegistrationForm from "/src/components/RegistrationForms/Form.jsx"
+import "/src/components/RegistrationForms/Form.css"
+// import Sidebar from "/src/components/Sidebar.jsx"
 
 const PlacementsStaff = Placementsteam.map((dataArg) => {
 	return <Staff key={dataArg.staffId} item={dataArg} />;
@@ -12,6 +15,7 @@ let Placements=() =>{
     return(
 		<>
 	<Slides />
+	{/* <Sidebar /> */}
 <div className="row w-full pt-3">
 <div className="col-3">
 	<div className="nav flex-column nav-pills placementmenuitems" id="tab" role="tablist" aria-orientation="vertical">
@@ -20,13 +24,13 @@ let Placements=() =>{
       	<a className="nav-link" id="trainingandplacementsteam-tab" data-toggle="pill" href="#trainingandplacementsteam" role="tab" aria-controls="trainingandplacementsteam" aria-selected="false">Training and Placements Team</a>
       	<a className="nav-link" id="notifications-tab" data-toggle="pill" href="#notifications" role="tab" aria-controls="notifications" aria-selected="false">Notifications</a>
       	<a className="nav-link" id="trainingregistration-tab" data-toggle="pill" href="#trainingregistration" role="tab" aria-controls="trainingregistration" aria-selected="false">Training Registration</a>
-		<a className="nav-link" id="placementgallery-tab" data-toggle="pill" href="#placementgallery" role="tab" aria-controls="placementgallery" aria-selected="false">Placement Gallery</a>
+		{/* <a className="nav-link" id="placementgallery-tab" data-toggle="pill" href="#placementgallery" role="tab" aria-controls="placementgallery" aria-selected="false">Placement Gallery</a> */}
 		<Link className="nav-link" to={"/YearWise-Placements"} >YearWise Placements</Link>
 		<Link className="nav-link" to={"/BranchWise-Placements"} >BranchWise Placements</Link>
 	</div>
 </div>
 	<div className="left-navcontent">
-		<div className="col">
+		<div className="col pl-3">
     		<div className="tab-content" id="tabContent">
 			<div className="tab-pane fade show in active" style={{width:"fit-content"}} id="aboutplacements" role="tabpanel" aria-labelledby="aboutplacements-tab">
 			<div className='aboutplacements pb-1'>About Placements</div>
@@ -55,11 +59,6 @@ let Placements=() =>{
 						choosing their engineering and managerial human resources from us, 
 						the college.
 					</div>
-					<div>In an endeavor to do justiceto each of the company that is 
-						choosing their engineering and managerial human resources from us, 
-						the college.choosing their engineering and managerial human resources from us, 
-						the college.
-					</div>
 			</div>
 			<div className="tab-pane fade" id="trainingandplacementsteam" role="tabpanel" aria-labelledby="trainingandplacementsteam-tab">
 			<div className='TrainingAndPlacementsTeam pb-1 md:ml-28 xl:ml-0'>Training & Placement Team</div>
@@ -80,53 +79,40 @@ let Placements=() =>{
 			<div className="tab-pane fade " id="trainingregistration" role="tabpanel" aria-labelledby="trainingregistration-tab">
 				<div className='TrainingRegistration pb-1 md:ml-28 xl:ml-0'>Training Registration Form</div>
 				<div className='line w-14 h-1 md:ml-28 xl:ml-0' style={{background:"#0060b1"}}></div>
-				<div className='flex max-h-80 md:ml-28 xl:ml-0'>
-					<form action="" className='flex flex-col'>
-						<label>Name:</label>
-						<input className='border-2 border-black rounded-md' type="text" />
-						<label>Regd No:</label>
-						<input className='border-2 border-black rounded-md' type="text" />
-						<label>Branch:</label>
-						<input className='border-2 border-black rounded-md' type="text" />
-						<label>Semister:</label>
-						<input className='border-2 border-black rounded-md' type="text" maxLength={1}/>
-						<label>Email-Id:</label>
-						<input className='border-2 border-black rounded-md' type="email" maxLength={30}/>
-						<label>Contact No:</label>
-						<input className='border-2 border-black rounded-md' type="text" maxLength={10} />
-					</form>
-				</div>
+				<div className='flex max-h-96 md:ml-28 xl:ml-0'><RegistrationForm /></div> 
 			</div>
-			<div className="tab-pane fade" id="placementgallery" role="tabpanel" aria-labelledby="placementgallery-tab">
+			{/* <div className="tab-pane fade" id="placementgallery" role="tabpanel" aria-labelledby="placementgallery-tab">
 			<div className='PlacementGallery pb-1'>placement Gallery</div>
 				<div className='line w-14 h-1' style={{background:"#0060b1"}}></div>
-			</div>
+			</div> */}
 			<div className="tab-pane fade" id="yearWiseplacements" role="tabpanel" aria-labelledby="yearWiseplacements-tab">
 				This page can be used to yearWiseplacements
 			</div>
 			<div className="tab-pane fade" id="branchWiseplacements" role="tabpanel" aria-labelledby="branchWiseplacements-tab">
 				This page can be used to branchWiseplacements 
-			</div>
+			</div>  
 			</div>
   		</div>
 	</div>
 </div>
 
 
-			<div className='Recruitersdiv flex'>
+			<div className='Recruitersdiv mt-5 flex'>
 			<div className='flex h-26'>
 			<div className='Recruiters' style={{background:"#0060b1"}}>Our Recruiters</div>
 			</div>
 			<div className='marqueeplacementimages'>
 				<marquee className='marquee' speed={30}>
 					<div className='marqueeplacementimages flex'>
-						<img className='pr-2 h-24' src="src\assets\tcs.png" alt="" />
-						<img className='pr-2 h-24' src="src\assets\wipro.png" alt="" />
-						<img className='pr-6 h-24' src="src\assets\techmahindra.png" alt="" />
-						<img className='pr-6 h-24' src="src\assets\valuelabs.png" alt="" />
-						<img className='pr-6 h-24' src="src\assets\accenture.png" alt="" />
-						<img className='pr-6 h-24' src="src\assets\bosch.png" alt="" />
-						<img className='pr-6 h-24' src="src\assets\ibm.png" alt="" />
+						<img className='mr-6 w-36 h-24' src="src\assets\tcs.png" alt="" />
+						<img className='mr-6 w-36 h-24' src="src\assets\Infosys.jpg" alt="" />
+						<img className='mr-6 w-36 h-24' src="src\assets\wipro.png" alt="" />
+						<img className='mr-6 w-36 h-24' src="src\assets\ibm.png" alt="" />
+						<img className='mr-6 w-36 h-24' src="src\assets\techmahindra.png" alt="" />
+						<img className='mr-6 w-36 h-24' src="src\assets\snovasys.png" alt="" />
+						<img className='mr-6 w-36 h-24' src="src\assets\bosch.png" alt="" />
+						<img className='mr-6 w-36 h-24' src="src\assets\amararaja.png" alt="" />
+						<img className='mr-6 w-36 h-24' src="src\assets\efftronics.png" alt="" />
 					</div>
 				</marquee>
 			</div>

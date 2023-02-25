@@ -47,13 +47,13 @@
 .marqueeplacementimages{
 	width: 100%;
 }
+.marquee{
+	display: inline-flex;
+}
 form{
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 	overflow-y: auto;
-}
-.marquee{
-	display: inline-flex;
 }
 .canvasjs-chart-credit{
 	display: none;
@@ -75,7 +75,7 @@ form{
 	width: 100%;
 }
 .table-body{
-    height: 300px;
+    height: 500px;
 	width: 100%;
 }
 .table-striped>tbody>tr:nth-child(odd){
@@ -86,20 +86,64 @@ form{
 	background-color:white;
 	color: black;
  }
- .apexcharts-zoom-icon, .apexcharts-legend-series, .apexcharts-zoomin-icon,.apexcharts-legend-text, .apexcharts-zoomout-icon ,.apexcharts-element-hidden, .apexcharts-reset-icon, .apexcharts-pan-icon{
+ .apexcharts-zoom-icon,
+ .apexcharts-zoomin-icon, 
+ .apexcharts-zoomout-icon ,.apexcharts-element-hidden,
+  .apexcharts-reset-icon, .apexcharts-pan-icon{
 	display: none;
  }
+.apexcharts-canvas{
+	width: 900px !important;
+ }
+ #SvgjsText1454{
+	margin-top: 5px;
+ }
  .BarChart{
-	width: 60%;
-	height:50%;
+	margin-left: 250px;
+	width: 920px ;
 	border: 3px solid #0060b1;
+ }
+ .BarChart1{
+	margin-top: 40px;
+	width: 770px;
+	border: 3px solid #0060b1;
+ }
+ .apexcharts-menu-icon{
+	display: none;
+ }
+ .apexcharts-title-text{
+	font-size: 20px !important;
+ }
+.apexcharts-xaxis-label{
+	font-weight: 600 !important;
+ }
+ .donutchart1{
+	margin-right: 270px !important;
+	font-size: large;
+	color: white;
+	background-color: #0060b1;
+	font-weight: bold;
+	margin-left: 349px;
+ }
+ .donutchart{
+	margin-right: 349px !important;
+	font-size: large;
+	color: white;
+	background-color: #0060b1;
+	font-weight: bold;
+	margin-left: 250px;
+ }
+ .float-right:hover{
+	color: #fff;
+ }
+ @media all and (max-width:320px) {
+	.Training-Placements-Menu{
+		margin-bottom: -60px;
+	}
  }
 @media all and (max-width:768px) {
 	.placementmenuitems, .YearWiseplacementmenuitems, .BranchWiseplacementmenuitems{
 		margin-left: -29px;
-	}
-	.Training-Placements-Menu{
-		margin-bottom: -70px;
 	}
 	.YearWise-Placements-Menu, .BranchWise-Placements-Menu{
 		margin-bottom:-10px;
@@ -133,4 +177,96 @@ form{
 	.row{
 		flex-wrap: nowrap;
 	}
+}
+
+/* h2,h3,p{
+	display: none;
+}
+.container{
+    display:flex;
+}
+main{
+    width: 100%;
+    padding: 20px;
+}
+.sidebar{
+    background: #000;
+    color: #fff;
+    height: 70vh;
+    width: 250px;
+    transition: all 0.5s;
+}
+.top_section{
+    display: flex;
+    align-items:center;
+    padding:20px 15px;
+}
+.logo{
+    font-size: 30px;
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.link{
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.link:hover{
+    background:lightskyblue;
+    color: #000;
+    transition: all 0.5s;
+}
+.active{
+    background: lightskyblue;
+    color: #000;
+}
+.icon, .link_text{
+    font-size: 20px;
+} */
+
+.counter {
+	color: #0060b1;
+	background: linear-gradient(to bottom, #0060b1 49%, transparent 50%);
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	width: 130px;
+	height: 130px;
+	padding: 15px 10px 25px;
+	margin: 0 auto;
+	border: 8px solid #0060b1;
+	border-radius: 100% 100%;
+	box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+.counter .counter-value {
+	color: #fff;
+	font-size: var(--desktop-bodytext-fontsize);
+	font-weight: 700;
+	display: block;
+	margin: 0 0 25px;
+}
+.counter h3 {
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0;
+}
+.counter.one {
+	color: #0060b1;
+	background: linear-gradient(to bottom, #0060b1 49%, transparent 50%);
+	border-color: #0060b1;
+}
+.counter.two {
+	color: #0060b1;
+	background: linear-gradient(to bottom, #0060b1 49%, transparent 50%);
+	border-color: #0060b1;
+}
+.counter.three {
+	color: #0060b1;
+	background: linear-gradient(to bottom, #0060b1 49%, transparent 50%);
+	border-color: #0060b1;
 }
