@@ -16,7 +16,8 @@ function Services(){
                     key={services.title}
                     title={services.title}
                     imgUrl={services.imgUrl}
-                    description={services.description}  
+                    description={services.description}
+                    url={services.url}  
                     >
 
                     </ServiceItem>

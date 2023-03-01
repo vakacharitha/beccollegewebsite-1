@@ -38,23 +38,23 @@ function Aicte() {
                         <div className="tab-pane fade show active" id="AICTEMandatoryDisclosure" role="tabpanel" aria-labelledby="AICTEMandatoryDisclosure-tab">
                             <div className='mt-4'>
                                 <h1 className='text-start py-2 text-xl text-neutral-900'>AICTE MANDATORY DISCLOSURE</h1>
-                                <embed src="/src/assets/saturatoryData/AICTE_Mandatory_Disclosure.pdf" width={showButtons ? 800 : 1200} height={400}>
+                                <embed src="/src/assets/saturatoryData/AICTE_Mandatory_Disclosure.pdf" width={showButtons ? 800 : 1000} height={400}>
                                 </embed>
                             </div>
                         </div>
                         <div className="tab-pane fade mt-5" id="AICTEApproval" role="tabpanel" aria-labelledby="AICTEApproval-tab">
-                            <embed src="/src/assets/saturatoryData/BCE1644564782435.pdf" width={showButtons ? 800 : 1200} height={400}>
+                            <embed src="/src/assets/saturatoryData/BCE1644564782435.pdf" width={showButtons ? 800 : 1000} height={400}>
                             </embed>
                         </div>
                         <div className="tab-pane fade mt-5" id="Undertaking" role="tabpanel" aria-labelledby="Undertaking-tab">
-                            <embed src="/src/assets/saturatoryData/BCE1644564782435.pdf" width={showButtons ? 800 : 1200} height={400}>
+                            <embed src="/src/assets/saturatoryData/BCE1644564782435.pdf" width={showButtons ? 800 : 1000} height={400}>
                             </embed>
                         </div>
                         <div className="tab-pane fade mt-3" id="AICTEEOAS" role="tabpanel" aria-labelledby="AICTEEOAS-tab">
                             <h1 className='text-start py-2 text-xl text-neutral-900'>AICTEEOA</h1>
                             <div className='flex '><p className='flex justify-center p-1 text-blue-500'>Extension of Approval EOA:</p>
                                 <div className="relative flex justify-center items-center gap-3">
-                                    <button className="relative flex justify-cwenter items-center bg-white border focus:outline-none shadow text-gray-600 rounded focus:ring ring-gray-200 group">
+                                    <button className="relative flex justify-center items-center bg-white border focus:outline-none shadow text-gray-600 rounded focus:ring ring-gray-200 group">
                                         <p className="px-4">Dropdown</p>
                                         <span className="border-l p-2 hover:bg-gray-100">
                                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -64,15 +64,15 @@ function Aicte() {
                                         </span>
                                         <div className="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded" id="top">
                                             <ul className="text-left border rounded">
+                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2022-2023</li>
                                                 <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2021-2022</li>
                                                 <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2020-2021</li>
                                                 <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2019-2020</li>
                                                 <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2018-2019</li>
-                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2021-2022</li>
-                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2021-2022</li>
-                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2021-2022</li>
-                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2021-2022</li>
-                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2021-2022</li>
+                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2017-2018</li>
+                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2016-2017</li>
+                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2015-2016</li>
+                                                <li href="#" onClick={(e) =>  setDocumentYear(e.target.innerText)} className="px-4 py-1 hover:bg-gray-100 border-b">2014-2015</li>
                                             </ul>
                                         </div>
                                     </button>
@@ -83,34 +83,46 @@ function Aicte() {
                                     <br></br>
                                     {documentYear}
 
-                                    {documentYear == "2021-2022" ?
+                                    {documentYear == "2022-2023" ?
                                         <>
 
-                                            <embed src="/src/assets/saturatoryData/AICTE_Mandatory_Disclosure.pdf" width={showButtons ? 800 : 1000} height={400}>
+                                            <embed src="/src/assets/saturatoryData/aicte(2022-2023).PDF" width={showButtons ? 800 : 1000} height={400}>
                                             </embed>
                                         </>
-                                        : documentYear == "2020-2021" ?
+                                        : documentYear == "2021-2022" ?
 
 
 
-                                            <embed src="/src/assets/saturatoryData/BCE1644564782435.pdf" width={showButtons ? 800 : 1000} height={400}>
+                                            <embed src="/src/assets/saturatoryData/aicte(2021-2022).PDF" width={showButtons ? 800 : 1000} height={400}>
                                             </embed>
 
-                                            : documentYear == "2019-2020" ?
+                                            : documentYear == "2020-2021" ?
 
-                                                <embed src="/src/assets/saturatoryData/AICTE_Mandatory_Disclosure.pdf" width={showButtons ? 800 : 1000} height={400}>
+                                                <embed src="/src/assets/saturatoryData/aicte(2020-2021).PDF" width={showButtons ? 800 : 1000} height={400}>
                                                 </embed>
-                                                : documentYear == "2018-2019" ?
+                                                : documentYear == "2019-2020" ?
 
-                                                    <embed src="/src/assets/saturatoryData/AICTE_Mandatory_Disclosure.pdf" width={showButtons ? 800 : 1000} height={400}>
+                                                    <embed src="/src/assets/saturatoryData/aicte(2019-2020).PDF" width={showButtons ? 800 : 1000} height={400}>
                                                     </embed>
-                                                    : documentYear == "2017-2018" ?
+                                                    : documentYear == "2018-2019" ?
 
-                                                        <embed src="/src/assets/saturatoryData/AICTE_Mandatory_Disclosure.pdf" width={showButtons ? 800 : 1000} height={400}>
+                                                        <embed src="/src/assets/saturatoryData/aicte(2018-2019).PDF" width={showButtons ? 800 : 1000} height={400}>
                                                         </embed>
-                                                        : documentYear == "2016-2018" ?
+                                                        : documentYear == "2017-2018" ?
 
-                                                            <embed src="/src/assets/saturatoryData/AICTE_Mandatory_Disclosure.pdf" width={showButtons ? 800 : 1000} height={400}>
+                                                            <embed src="/src/assets/saturatoryData/aicte(2017-2018).PDF" width={showButtons ? 800 : 1000} height={400}>
+                                                            </embed>
+                                                            : documentYear == "2016-2017" ?
+
+                                                            <embed src="/src/assets/saturatoryData/aicte(2016-2017).PDF" width={showButtons ? 800 : 1000} height={400}>
+                                                            </embed>
+                                                            : documentYear == "2015-2016" ?
+
+                                                            <embed src="/src/assets/saturatoryData/aicte(2015-1016).PDF" width={showButtons ? 800 : 1000} height={400}>
+                                                            </embed>
+                                                            : documentYear == "2014-2015" ?
+
+                                                            <embed src="/src/assets/saturatoryData/aicte(2014-2015).PDF" width={showButtons ? 800 : 1000} height={400}>
                                                             </embed>
                                                             : <></>}
                            
@@ -118,10 +130,7 @@ function Aicte() {
                         </div>
                     </div>
                 </div>
-                <div className="tab-pane fade mt-5" id="pdf1" role="tabpanel">
-                    <embed src="/src/assets/saturatoryData/BCE1644564782435.pdf" width={800} height={400}>
-                    </embed>
-                </div>
+                
             </div>
 
         </div >

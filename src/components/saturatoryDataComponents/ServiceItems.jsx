@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-function ServiceItem({imgUrl, title, description}){
+function ServiceItem({imgUrl, title, description,url}){
     return(
           <div className="p-4 col  px-2 w-300 overflow-x-hidden">       
         <div className='rounded-lg overflow-hidden shadow-xl h-10.2 w-full py-1'>
@@ -9,13 +9,16 @@ function ServiceItem({imgUrl, title, description}){
             <div className='p-1 w-auto bg-white'>
                 <h3 className='text-lg md:text-xl mb-2 md:mb-3 font-semibold h-6'>{title}</h3>
                 <div className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm h-56'>
-                        <div className='inline-block  bg-white rounded-md h-24 px-2.5 text-justify'>{description}</div>
-                        <div className='0.5'>
-                        <Link to={"/naacInfo"} className='p-40 py-2 text-right underline hover:no-underline
+                        <div className='inline-block  bg-white rounded-md h-26 px-2.5 text-justify'>{description}</div>
+                        {/* <div className='1'>
+                            <div className='flex justify-center'>link</div> */}
+                        <Link to={url} className='p-40 py-2 text-right underline hover:no-underline
                    text-blue-600 hover:text-blue-800 visited:text-purple-600 "'>viewmore</Link>
-                   <Link to={"/naac1Info"} className='p-40 py-2 text-right underline hover:no-underline
-                   text-blue-600 hover:text-blue-800 visited:text-purple-600 "'>viewmore1</Link>
-                </div>
+                   {/* <Link to={"/naac"} className='p-40 py-2 text-right underline hover:no-underline
+                   text-blue-600 hover:text-blue-800 visited:text-purple-600 "'>viewmore</Link> */}
+                  
+                {/* </div> */}
+                {/* <a href="/src/pages/saturaotryData/Naac.jsx" className="inline-block  bg-white rounded-md h-26 px-2.5 text-justify">Viewmore</a> */}
             </div>
         </div>
         </div>

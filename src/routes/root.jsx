@@ -33,9 +33,11 @@ export default function Root() {
 					className=" m-2 p-2 border-2 border-black"
 					to={"/naac"}
 				>
-					NAAC
+					Satuatory Data
 				</Link>
+				
 			</button>
+			
 			<Outlet />
 			<Footer />
 		</>

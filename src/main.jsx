@@ -9,6 +9,8 @@ import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
 import Aicte from "/src/pages/saturaotryData/aicte.jsx"
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
+import NaacPage from "/src/pages/saturaotryData/Naac.jsx"
+
 
 
 
@@ -39,6 +41,11 @@ const router = createBrowserRouter([
 				path: "/naacInfo",
 				element: <Aicte />,
 			},
+			{
+				path: "/naacPage",
+				element: <NaacPage />,
+			},
+			
 		
 		],
 	},
