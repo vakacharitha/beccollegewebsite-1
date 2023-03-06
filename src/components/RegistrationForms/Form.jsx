@@ -47,13 +47,6 @@ function Form() {
     if (!values.ContactNo) {
       errors.ContactNo = "ContactNo is required!";
     }
-    // if (!values.password) {
-    //   errors.password = "Password is required";
-    // } else if (values.password.length < 8) {
-    //   errors.password = "Password must be more than 8 characters";
-    // } else if (values.password.length > 20) {
-    //   errors.password = "Password cannot exceed more than 20 characters";
-    // }
     return errors;
   };
 
@@ -64,7 +57,6 @@ function Form() {
       ) 
       : (
         <pre>
-          {/* {JSON.stringify(formValues, undefined, 2)} */}
         </pre>
       )}
 
@@ -80,7 +72,7 @@ function Form() {
           <label>Email</label>
           <label>Contact No</label>
           </div>
-          <div className="">
+          <div className="forminputs">
           <input
               type="text"
               name="Name"
@@ -90,7 +82,6 @@ function Form() {
               onChange={handleChange}
               required
             />
-            {/* <p>{formErrors.Name}</p> */}
           <input
               type="text"
               name="RegdNo"
@@ -100,7 +91,6 @@ function Form() {
               onChange={handleChange}
               required
             />
-            {/* <p>{formErrors.RegdNo}</p> */}
           <input
               type="text"
               name="Branch"
@@ -110,20 +100,12 @@ function Form() {
               onChange={handleChange}
               required
             />
-            {/* <p>{formErrors.Branch}</p> */}
             <select name="Events" id="">
               <option value={formValues.event}>event1</option>
               <option value={formValues.event}>event2</option>
               <option value={formValues.event}>event3</option>
               <option value={formValues.event}>event4</option>
             </select>
-            {/* <input
-              type="text"
-              name="event"
-              placeholder="Select Event"
-              value={formValues.event}
-              onChange={handleChange}
-            /> */}
           <input
               type="text"
               name="email"
@@ -133,7 +115,6 @@ function Form() {
               onChange={handleChange}
               required
             />
-            {/* <p>{formErrors.email}</p> */}
           <input
               type="text"
               name="ContactNo"
@@ -143,7 +124,6 @@ function Form() {
               onChange={handleChange}
               required
             />
-            {/* <p>{formErrors.ContactNo}</p> */}
           </div>
           </div>
           <button className="submit fluid ui button blue">Submit</button>
