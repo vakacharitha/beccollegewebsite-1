@@ -16,7 +16,7 @@ export default function Root() {
 					className=" m-2 p-2 border-2 border-black"
 					to={"/examination-cell"}
 				>
-					Exams and results
+					Examination cell staff
 				</Link>
 			</button>
 			<button>
@@ -25,6 +25,28 @@ export default function Root() {
 					to={"/exam-notifications"}
 				>
 					Exam notifications
+				</Link>
+			</button>
+			<button>
+				<Link
+					className=" m-2 p-2 border-2 border-black"
+					to={"/departments/IT"}
+				>
+					Departments
+				</Link>
+				<Link className=" m-2 p-2 border-2 border-black" to={"/exam-downloads"}>
+					Exam downloads
+				</Link>
+			</button>
+			<button>
+				<Link className=" m-2 p-2 border-2 border-black" to={"/exam-login"}>
+					Exam Login
+				</Link>
+			</button>
+			<button>
+				<Link className=" m-2 p-2 border-2 border-black" to={"/exam-results"}>
+					Exam Results
+
 				</Link>
 			</button>
 			<Outlet />

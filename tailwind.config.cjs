@@ -29,5 +29,4 @@ module.exports = {
 			...defaultTheme.screens,
 		},
 	},
-	plugins: [require("flowbite/plugin")],
 };

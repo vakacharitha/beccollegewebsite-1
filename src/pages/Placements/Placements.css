@@ -47,13 +47,13 @@
 .marqueeplacementimages{
 	width: 100%;
 }
+.marquee{
+	display: inline-flex;
+}
 form{
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 	overflow-y: auto;
-}
-.marquee{
-	display: inline-flex;
 }
 .canvasjs-chart-credit{
 	display: none;
@@ -75,7 +75,7 @@ form{
 	width: 100%;
 }
 .table-body{
-    height: 300px;
+    height: 500px;
 	width: 100%;
 }
 .table-striped>tbody>tr:nth-child(odd){
@@ -86,20 +86,64 @@ form{
 	background-color:white;
 	color: black;
  }
- .apexcharts-zoom-icon, .apexcharts-legend-series, .apexcharts-zoomin-icon,.apexcharts-legend-text, .apexcharts-zoomout-icon ,.apexcharts-element-hidden, .apexcharts-reset-icon, .apexcharts-pan-icon{
+ .apexcharts-zoom-icon,
+ .apexcharts-zoomin-icon, 
+ .apexcharts-zoomout-icon ,.apexcharts-element-hidden,
+  .apexcharts-reset-icon, .apexcharts-pan-icon{
 	display: none;
  }
+.apexcharts-canvas{
+	width: 900px !important;
+ }
+ #SvgjsText1454{
+	margin-top: 5px;
+ }
  .BarChart{
-	width: 60%;
-	height:50%;
+	margin-left: 250px;
+	width: 920px ;
 	border: 3px solid #0060b1;
+ }
+ .BarChart1{
+	margin-top: 40px;
+	width: 770px;
+	border: 3px solid #0060b1;
+ }
+ .apexcharts-menu-icon{
+	display: none;
+ }
+ .apexcharts-title-text{
+	font-size: 20px !important;
+ }
+.apexcharts-xaxis-label{
+	font-weight: 600 !important;
+ }
+ .donutchart1{
+	margin-right: 270px !important;
+	font-size: large;
+	color: white;
+	background-color: #0060b1;
+	font-weight: bold;
+	margin-left: 349px;
+ }
+ .donutchart{
+	margin-right: 349px !important;
+	font-size: large;
+	color: white;
+	background-color: #0060b1;
+	font-weight: bold;
+	margin-left: 250px;
+ }
+ .float-right:hover{
+	color: #fff;
+ }
+ @media all and (max-width:320px) {
+	.Training-Placements-Menu{
+		margin-bottom: -60px;
+	}
  }
 @media all and (max-width:768px) {
 	.placementmenuitems, .YearWiseplacementmenuitems, .BranchWiseplacementmenuitems{
 		margin-left: -29px;
-	}
-	.Training-Placements-Menu{
-		margin-bottom: -70px;
 	}
 	.YearWise-Placements-Menu, .BranchWise-Placements-Menu{
 		margin-bottom:-10px;

@@ -1,4 +1,6 @@
 import '/src/pages/Placements/Placements.css'
+import React from "react";
+import Chart from "react-apexcharts";
 
 let BranchWisePlacements=() =>{
     return(
@@ -21,244 +23,153 @@ let BranchWisePlacements=() =>{
     <a className="dropdown-item" id="Placements2013-2014-tab" data-toggle="pill" href="#Placements2013-2014" role="tab" aria-controls="Placements2013-2014" aria-selected="false">Placements 2013-2014</a>
   </div>
 
-  <div className="left-navcontent">
+  <div className="left-navcontent pl-4">
 		<div className="col">
     		<div className="tab-content" id="tabContent">
-			    <div className="tab-pane fade show in active" style={{width:"fit-content"}} id="Placements2022-2023" role="tabpanel" aria-labelledby="Placements2022-2023-tab">
+			    <div className="tab-pane fade show in active w-96" style={{width:"fit-content"}} id="Placements2022-2023" role="tabpanel" aria-labelledby="Placements2022-2023-tab">
             <div className='Placements2022-2023 pb-1'>Placements Statistics for Academic Year : 2022-2023</div>
               <div className='line w-32 h-1 mb-2' style={{background:"#0060b1"}}></div>
-                <table className="table table-striped">
-                  <thead className='scroll-thead'>
-                    <tr className='p-5'>
-                      <th scope="col">S.NO.</th>
-                      <th scope="col">Name of the Company</th>
-                      <th scope="col">CSE</th>
-                      <th scope="col">IT</th>
-                      <th scope="col">ECE</th>
-                      <th scope="col">EEE</th>
-                      <th scope="col">MECH</th>
-                      <th scope="col">CIVIL</th>
-                      <th scope="col">EIE</th>
-                      <th scope="col">No of Offers</th>
-                    </tr>
-                  </thead>
-                  <tbody className='scroll-tbody-y table-body'>
-                    <tr className='p-5'>
-                      <th scope="row">&nbsp;&nbsp;&nbsp;1</th>
-                      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TCS</td>
-                      <td>25</td>
-                      <td>15</td>
-                      <td>10</td>
-                      <td>6</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>68</td>
-                    </tr>
-                    <tr className='w-full'>
-                      <th scope="row">&nbsp;&nbsp;&nbsp;2</th>
-                      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INFOSYS</td>
-                      <td>10</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>27</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">&nbsp;&nbsp;&nbsp;3</th>
-                      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CARE MONITOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                      <td>8</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>16</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">&nbsp;&nbsp;&nbsp;4</th>
-                      <td>WIPRO</td>
-                      <td>25</td>
-                      <td>15</td>
-                      <td>10</td>
-                      <td>6</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>68</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">&nbsp;&nbsp;&nbsp;5</th>
-                      <td>SNOVASYS</td>
-                      <td>10</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>27</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">&nbsp;&nbsp;&nbsp;6</th>
-                      <td>CAP GEMINI</td>
-                      <td>10</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>27</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">&nbsp;&nbsp;&nbsp;7</th>
-                      <td>TALENT PACE</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">&nbsp;&nbsp;&nbsp;8</th>
-                      <td>EFFTRONICS</td>
-                      <td>5</td>
-                      <td>3</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>11</td>
-                    </tr>
-                  </tbody>
-                </table>
+
+      <React.Fragment>
+      <div className="BarChart1 container-fluid mb-5">
+        <Chart
+          type="bar"
+          series={[
+            {
+              name: "Students Placed",
+              data: [87,66,53,45,40,34,20],
+            },
+          ]}
+          
+          options={{
+            title: {
+              text: "AcademicYear: 2022 - 2023",
+              style: { fontSize: 30 },
+              align:"center",
+            },
+
+            xaxis: {
+              tickPlacement: "on",
+              categories: [
+                "CSE",
+                "IT",
+                "ECE",
+                "EEE",
+                "MECH",
+                "CIVIL",
+                "EIE",
+              ],
+            },
+
+            yaxis: {
+              labels: {
+                formatter: (val) => {
+                  return `${val}`;
+                },
+                style: { fontSize: "15", colors: ["black"] },
+              },
+              title: {
+                text: "No of Students Placed",
+                style: { color: "black", fontSize: 15 },
+              },
+            },
+            plotOptions: {
+              bar: {
+                  distributed: true,
+                  vertical: true,
+                },
+            },
+            legend: {
+              show: true,
+              position: "right",
+            },
+            colors: ['#0CE816', '#0C3EE8', '#9C27B0', '#FFC300', '#EA0EE0', '#FFC300', '#0C3EE8','#9C27B0', '#0EEAE0', '#0C3EE8'],
+            dataLabels: {
+              formatter: (val) => {
+                return `${val}`;
+              },
+              style: {
+                colors: ["#f4f4f4"],
+                fontSize: 15,
+              },
+            },
+          }}
+        ></Chart>
+      </div>
+    </React.Fragment>
 			</div>
 			<div className="tab-pane fade" id="Placements2021-2022" role="tabpanel" aria-labelledby="Placements2021-2022-tab">
         <div className='Placements2021-2022 pb-1'>Placements Statistics for Academic Year : 2021-2022</div>
           <div className='line w-32 h-1 mb-2' style={{background:"#0060b1"}}></div>
-          <table className="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">S.NO.</th>
-                      <th scope="col">Name of the Company</th>
-                      <th scope="col">CSE</th>
-                      <th scope="col">IT</th>
-                      <th scope="col">ECE</th>
-                      <th scope="col">EEE</th>
-                      <th scope="col">MECH</th>
-                      <th scope="col">CIVIL</th>
-                      <th scope="col">EIE</th>
-                      <th scope="col">No of Offers</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>TCS</td>
-                      <td>25</td>
-                      <td>15</td>
-                      <td>10</td>
-                      <td>6</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>68</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>INFOSYS</td>
-                      <td>10</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>27</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>CARE MONITOR</td>
-                      <td>8</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>16</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>WIPRO</td>
-                      <td>25</td>
-                      <td>15</td>
-                      <td>10</td>
-                      <td>6</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>68</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>SNOVASYS</td>
-                      <td>10</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>27</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">6</th>
-                      <td>CAP GEMINI</td>
-                      <td>10</td>
-                      <td>5</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>27</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">7</th>
-                      <td>TALENT PACE</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">8</th>
-                      <td>EFFTRONICS</td>
-                      <td>5</td>
-                      <td>3</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>11</td>
-                    </tr>
-                  </tbody>
-                </table>
+
+                <React.Fragment>
+      <div className="BarChart1 container-fluid mb-5">
+
+        <Chart
+          type="bar"
+          series={[
+            {
+              name: "Students Placed",
+              data: [87,66,53,45,40,34,20],
+            },
+          ]}
+          
+          options={{
+            title: {
+              text: "AcademicYear: 2021 - 2022",
+              style: { fontSize: 30 },
+              align:"center",
+            },
+
+            xaxis: {
+              tickPlacement: "on",
+              categories: [
+                "CSE",
+                "IT",
+                "ECE",
+                "EEE",
+                "MECH",
+                "CIVIL",
+                "EIE",
+              ],
+            },
+
+            yaxis: {
+              labels: {
+                formatter: (val) => {
+                  return `${val}`;
+                },
+                style: { fontSize: "15", colors: ["black"] },
+              },
+              title: {
+                text: "No of Students Placed",
+                style: { color: "black", fontSize: 15 },
+              },
+            },
+            plotOptions: {
+              bar: {
+                  distributed: true,
+                  vertical: true,
+                },
+            },
+            legend: {
+              show: true,
+              position: "right",
+            },
+            colors: ['#0CE816', '#0C3EE8', '#9C27B0', '#FFC300', '#EA0EE0', '#FFC300', '#0C3EE8','#9C27B0', '#0EEAE0', '#0C3EE8'],
+            dataLabels: {
+              formatter: (val) => {
+                return `${val}`;
+              },
+              style: {
+                colors: ["#f4f4f4"],
+                fontSize: 15,
+              },
+            },
+          }}
+        ></Chart>
+      </div>
+    </React.Fragment>
 			</div>
 			<div className="tab-pane fade" id="Placements2020-2021" role="tabpanel" aria-labelledby="Placements2020-2021-tab">
 				<div className='Placements2020-2021 pb-1'>Placements Statistics for Academic Year : 2020-2021</div>

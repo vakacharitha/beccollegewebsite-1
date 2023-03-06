@@ -1,12 +1,33 @@
 import '/src/pages/Placements/Placements.css'
-import React from "react";
+import React, {useState} from "react";
 import Chart from "react-apexcharts";
+import Donutchart from '/src/components/Charts/DonutChart.jsx'
+import Donutchart1 from '/src/components/Charts/DonutChart1.jsx'
 
 let YearWisePlacements=() =>{
+  const [isHovering, setIsHovering] = useState(false);
+  const [isClicking, setIsClick] = useState(false);
+
+  const handleClick = () => {
+    setIsClick(true);
+  };
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
     return(
         <>
 <div className="nav dropdown items-start show w-full pt-4">
-  <a className="btn ml-3 dropdown-toggle text-white" style={{background:"#0060b1"}} id="Placements2022-2023-tab" role="button" data-toggle="dropdown" aria-controls="Placements2022-2023" aria-selected="false" aria-haspopup="true" aria-expanded="false">
+  {/* <div className='flex flex-col'>
+  <a onClick={handleClick} className="btn mb-2 ml-3 text-white" style={{background:"#0060b1"}} role="button">
+  Placements History
+  </a>
+  </div> */}
+  {/* <a className="btn ml-3 dropdown-toggle items-center text-white" style={{background:"#0060b1"}} id="Placements2022-2023-tab" role="button" data-toggle="dropdown" aria-controls="Placements2022-2023" aria-selected="false" aria-haspopup="true" aria-expanded="false">
   YearWise Placements
   </a>
 
@@ -24,9 +45,9 @@ let YearWisePlacements=() =>{
   </div>
 
   <div className="left-navcontent">
-		<div className="col">
+		<div className="col pl-5">
     		<div className="tab-content" id="tabContent">
-			    <div className="tab-pane fade show in active" style={{width:"fit-content"}} id="Placements2022-2023" role="tabpanel" aria-labelledby="Placements2022-2023-tab">
+			    <div className="flex-row tab-pane fade show in active" style={{width:"fit-content"}} id="Placements2022-2023" role="tabpanel" aria-labelledby="Placements2022-2023-tab">
             <div className='Placements2022-2023 pb-1'>Placements Statistics for Academic Year : 2022-2023</div>
               <div className='line w-32 h-1 mb-2' style={{background:"#0060b1"}}></div>
               <table className="table table-striped max-w-sm">
@@ -41,7 +62,7 @@ let YearWisePlacements=() =>{
                 <tr>
                   <th scope="row">1</th>
                   <td>TCS</td>
-                  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;76&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;76&nbsp;&nbsp;&nbsp;&nbsp;</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
@@ -109,8 +130,29 @@ let YearWisePlacements=() =>{
                   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;</td>
                 </tr>
               </tbody>
-            </table>
-			</div>
+              </table>
+            <div>
+            {isHovering && (
+                  <table className='table z-50 relative'>
+                    <tr>
+                      <td>S.NO.</td>
+                      <td>Regd No</td>
+                      <td>Name of the Student</td>
+                      <td>Branch</td>
+                      <td>Package Offered</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Y19AIT599</td>
+                      <td>Hello</td>
+                      <td>IT</td>
+                      <td>4LPA</td>
+                    </tr>
+                  </table>
+                  )}
+            </div>
+      </div>
+      
 			<div className="tab-pane fade" id="Placements2021-2022" role="tabpanel" aria-labelledby="Placements2021-2022-tab">
         <div className='Placements2021-2022 pb-1'>Placements Statistics for Academic Year : 2021-2022</div>
           <div className='line w-32 h-1 mb-2' style={{background:"#0060b1"}}></div>
@@ -318,13 +360,16 @@ let YearWisePlacements=() =>{
 			</div>
 			</div>
   		</div>
-	</div>
+	</div> */}
 </div>  
-<React.Fragment>
+    {/* {isClicking && ( */}
+    <React.Fragment>
       <div className="BarChart container-fluid mb-5">
 
         <Chart
           type="bar"
+          width={900}
+          height={500}
           series={[
             {
               name: "Students Placed",
@@ -336,8 +381,8 @@ let YearWisePlacements=() =>{
             title: {
               text: "YearWise Placements",
               style: { fontSize: 30 },
+              align:"center",
             },
-
             xaxis: {
               tickPlacement: "on",
               categories: [
@@ -377,19 +422,29 @@ let YearWisePlacements=() =>{
               position: "right",
             },
             colors: ['#0CE816', '#0C3EE8', '#9C27B0', '#FFC300', '#EA0EE0', '#FFC300', '#0C3EE8','#9C27B0', '#0EEAE0', '#0C3EE8'],
-            dataLabels: {
-              formatter: (val) => {
-                return `${val}`;
-              },
-              style: {
-                colors: ["#f4f4f4"],
-                fontSize: 15,
-              },
-            },
+            
           }}
         ></Chart>
       </div>
     </React.Fragment>
+    {/* )} */}
+    
+    {/* {isClicking && ( */}
+      <div className='donutchart flex p-1'>Placements 2022-2023  
+      <div className='pl-72'>Max sal : 5.5LPA, avg sal : 3.5LPA, min sal : 2.5LPA</div>
+      {/* <a className='float-right' href="#">View Details</a> */}
+      </div>
+    <Donutchart />
+    {/* )} */}
+    
+    {/* {isClicking && ( */}
+      <div className='donutchart p-1'>Placements 2022-2023
+      <a className='float-right' href="#">View Details</a>
+      </div>
+    <Donutchart1 />
+    {/* )} */}
+    
+        
         </>
     )
 }
