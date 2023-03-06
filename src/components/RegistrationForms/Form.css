@@ -15,6 +15,11 @@
   input{
     display: block;
     margin-bottom: 12px;
+    width: 100%;
+  }
+  select{
+    padding-right: 20.5rem;
+    margin-bottom: 12px;
   }
   .submit {
     background: #0563b4 !important;
@@ -27,3 +32,17 @@
   p {
     color: red;
   }
+  @media all and (max-width:320px) {
+    input,select{
+      width: 11rem;
+      padding: 5px !important;
+      margin-bottom: 10px;
+    }
+    label{
+      padding: 2px;
+      margin-bottom: 18px;
+    }
+    form{
+      padding: 10px !important;
+    }
+   }

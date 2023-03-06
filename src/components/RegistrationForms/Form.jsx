@@ -36,6 +36,9 @@ function Form() {
     if (!values.Branch) {
       errors.Branch = "Branch is required!";
     }
+    if (!values.Event) {
+      errors.Event = "Event is required!";
+    }
     if (!values.email) {
       errors.email = "Email is required!";
     } else if (!regex.test(values.email)) {
@@ -58,7 +61,8 @@ function Form() {
     <div className="form-container">
       {Object.keys(formErrors).length === 0 && isSubmit ? (
         <div className="ui message success">Signed in successfully</div>
-      ) : (
+      ) 
+      : (
         <pre>
           {/* {JSON.stringify(formValues, undefined, 2)} */}
         </pre>
@@ -81,44 +85,65 @@ function Form() {
               type="text"
               name="Name"
               placeholder="Name"
+              autoComplete="off"
               value={formValues.Name}
               onChange={handleChange}
+              required
             />
+            {/* <p>{formErrors.Name}</p> */}
           <input
               type="text"
               name="RegdNo"
               placeholder="Regd No"
+              autoComplete="off"
               value={formValues.RegdNo}
               onChange={handleChange}
+              required
             />
+            {/* <p>{formErrors.RegdNo}</p> */}
           <input
               type="text"
               name="Branch"
               placeholder="Branch"
+              autoComplete="off"
               value={formValues.Branch}
               onChange={handleChange}
+              required
             />
-            <input
+            {/* <p>{formErrors.Branch}</p> */}
+            <select name="Events" id="">
+              <option value={formValues.event}>event1</option>
+              <option value={formValues.event}>event2</option>
+              <option value={formValues.event}>event3</option>
+              <option value={formValues.event}>event4</option>
+            </select>
+            {/* <input
               type="text"
               name="event"
               placeholder="Select Event"
               value={formValues.event}
               onChange={handleChange}
-            />
+            /> */}
           <input
               type="text"
               name="email"
               placeholder="Email"
+              autoComplete="off"
               value={formValues.email}
               onChange={handleChange}
+              required
             />
+            {/* <p>{formErrors.email}</p> */}
           <input
               type="text"
               name="ContactNo"
               placeholder="Contact No"
+              autoComplete="off"
               value={formValues.ContactNo}
               onChange={handleChange}
+              required
             />
+            {/* <p>{formErrors.ContactNo}</p> */}
           </div>
           </div>
           <button className="submit fluid ui button blue">Submit</button>
