@@ -17,10 +17,14 @@ import Placements from "/src/pages/Placements/placements.jsx";
 import YearWisePlacements from "/src/pages/Placements/YearWisePlacements";
 import BranchWisePlacements from "/src/pages/Placements/BranchWisePlacements";
 
+// import Sidebar from "/src/components/Sidebar.jsx"
+// import AboutPlacements from "/src/pages/Placements/AboutPlacements"
+
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
+		// errorElement: <ErrorPage />,
 		children: [
 			{ index: true, element: <Homepage /> },
 			{
@@ -67,6 +71,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 	<>
 		<React.StrictMode>
 				<RouterProvider router={router} />
+				{/* <BrowserRouter>
+      <Sidebar>
+        <Routes>
+          <Route path="/aboutPlacements" element={<AboutPlacements />} />
+        </Routes>
+      </Sidebar>
+    </BrowserRouter> */}
 			<ChakraProvider>
 				<RouterProvider router={router} />
 			</ChakraProvider>
