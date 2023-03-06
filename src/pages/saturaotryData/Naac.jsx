@@ -38,7 +38,7 @@ function Aicte() {
                         <div className="tab-pane fade show active" id="AICTEMandatoryDisclosure" role="tabpanel" aria-labelledby="AICTEMandatoryDisclosure-tab">
                             <div className='mt-4'>
                                 <h1 className='text-start py-2 text-xl text-neutral-900'>NAAC CYCLE-I</h1>
-                                <embed src="/src/assets/saturatoryData/AICTE_Mandatory_Disclosure.pdf" width={showButtons ? 800 : 1200} height={400}>
+                                <embed src="/src/assets/saturatoryData/cycle-1.jpg" width={showButtons ? 600 : 1000} height={600}>
                                 </embed>
                             </div>
                         </div>

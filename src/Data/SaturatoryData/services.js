@@ -18,12 +18,12 @@ export default[
         title: 'NIRF',
         imgUrl:'/src/assets/saturatoryData/nirf.jpg',
         description:'The National Institutional Ranking Framework(NIRF)was approved by the MHRD and launched by Honourable Minister of Human Resource Development on 29th September2015.This framework outlines a methodology to rank institutions across the country.',
-        // link:'Viewmore2'
+        url:"/nirf"
     },
     {
         title: 'IQAC',
         imgUrl:'/src/assets/saturatoryData/download.png',
         description:'Internal Quality Assurance Cell (IQAC) is a part of the institution’s system and work towards realization of the goals of quality enhancement and sustenance.The work of the IQAC is the first step towards internalization and institutionalization of quality  enhancement .',
-        // link:'Viewmore3'
+        url:"/iqac"
     }, 
 ];
