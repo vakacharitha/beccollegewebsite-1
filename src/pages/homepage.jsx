@@ -10,6 +10,9 @@ import { Tab } from "@headlessui/react";
 import BecDetails from "/src/assets/BecDetails.jpg";
 import culturalFest from "/src/assets/culturalFest.jpg";
 import Devops from "/src/assets/Devops.jpg";
+import robotics from "/src/assets/robotics.jpg";
+import bectagon from "/src/assets/bectagon.jpg";
+
 import EngineersDay from "/src/assets/EngineersDay.jpg";
 import alumni1 from "/src/assets/homepage/placements/image 55.png";
 import alumni2 from "/src/assets/homepage/placements/image 57.png";
@@ -139,35 +142,49 @@ export default function homepage() {
 				className="relative mt-3"
 				data-carousel="slide"
 			>
-				<div className="relative h-56 overflow-hidden md:h-96">
+				<div className="relative h-40 overflow-hidden md:h-96">
 					<div className="hidden duration-700 ease-in-out" data-carousel-item>
 						<span className="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">
 							First Slide
 						</span>
 						<img
 							src={BecDetails}
-							className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 							alt="..."
 						/>
 					</div>
 					<div className="hidden duration-700 ease-in-out" data-carousel-item>
 						<img
 							src={Devops}
-							className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 							alt="..."
 						/>
 					</div>
 					<div className="hidden duration-700 ease-in-out" data-carousel-item>
 						<img
 							src={EngineersDay}
-							className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+					<div className="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src={robotics}
+							className="absolute block lg:h-96 w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 							alt="..."
 						/>
 					</div>
 					<div className="hidden duration-700 ease-in-out" data-carousel-item>
 						<img
 							src={culturalFest}
-							className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+					<div className="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src={bectagon}
+							className="absolute lg:h-96 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 							alt="..."
 						/>
 					</div>
@@ -198,8 +215,22 @@ export default function homepage() {
 						type="button"
 						className="w-3 h-3 rounded-full"
 						aria-current="false"
-						aria-label="Slide 3"
+						aria-label="Slide 4"
 						data-carousel-slide-to="3"
+					></button>
+					<button
+						type="button"
+						className="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 5"
+						data-carousel-slide-to="4"
+					></button>
+					<button
+						type="button"
+						className="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 6"
+						data-carousel-slide-to="5"
 					></button>
 				</div>
 				<button
@@ -251,6 +282,7 @@ export default function homepage() {
 					</span>
 				</button>
 			</div>
+
 			<div className="flex flex-row justify-evenly">
 				<div>
 					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px] ">
