@@ -16,6 +16,12 @@ import ExamResults from "/src/pages/examsResults/examResults.jsx";
 import Placements from "/src/pages/Placements/placements.jsx";
 import YearWisePlacements from "/src/pages/Placements/YearWisePlacements";
 import BranchWisePlacements from "/src/pages/Placements/BranchWisePlacements";
+import Facilities from "/src/pages/Facilities/Facilities.jsx";
+import Library from "/src/pages/Facilities/Library.jsx";
+import RoboticCentre from "/src/pages/Facilities/RoboticCentre.jsx";
+import BoschRexrothCEO from "/src/pages/Facilities/BoschRexrothCEO.jsx";
+import Cafteria from "/src/pages/Facilities/Cafteria.jsx";
+import Transportation from "/src/pages/Facilities/Transportation.jsx";
 
 // import Sidebar from "/src/components/Sidebar.jsx"
 // import AboutPlacements from "/src/pages/Placements/AboutPlacements"
@@ -62,6 +68,30 @@ const router = createBrowserRouter([
 			{
 				path: "/departments/IT",
 				element: <It />,
+			},
+			{
+				path: "/Facilities",
+				element: <Facilities />,
+			},
+			{
+				path: "/Library",
+				element: <Library />,
+			},
+			{
+				path: "/RoboticCentre",
+				element: <RoboticCentre />,
+			},
+			{
+				path: "/BoschRexrothCEO",
+				element: <BoschRexrothCEO />,
+			},
+			{
+				path: "/Cafteria",
+				element: <Cafteria />,
+			},
+			{
+				path: "/Transportation",
+				element: <Transportation />,
 			},
 		],
 	},
