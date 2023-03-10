@@ -9,7 +9,7 @@ export default function Facilities(){
         <div>
 
 			<div>
-			    <div className=" w-full h-14 mt-2 text-5xl text-blue-800 font-sans flex justify-center items-center">Robotic-Centre</div>
+			    <div className=" w-full h-14 mt-2 text-5xl text-blue-800 font-sans flex justify-center items-center">Robotic Centre</div>
 				<Slides2 />
 			</div>
 

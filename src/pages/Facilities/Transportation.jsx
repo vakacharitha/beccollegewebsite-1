@@ -30,7 +30,7 @@ export default function Facilities(){
                                                             <div className='line w-20 h-1 mb-4' style={{background:"#0060b1"}}></div> 
                                                             The college has been providing commuting facility to its staff and students with notable subsidized fares. The transportation facility is handled with an efficient fleet of 11 buses punctually running from Bapatla to College from morning to late evening on all working days.<br></br><br></br>
                                                             Bapatla Engineering College has a unique feature of working hours from 7:30 AM to 1:15 PM, which allows the staff and students to make use of the extent of the day.<br></br><br></br>
-                                                            Apart from the regular Shuttle services to commute the staff and students, Transport facility supports the students and staff to participate in co-curricular and extra-curricular activities during afternoons
+                                                            Apart from the regular Shuttle services to commute the staff and students, Transport facility supports the students and staff to participate in co-curricular and extra-curricular activities during afternoons 2:15 PM to 5:00 PM.
                                                         </p>
                                                 </div> 
                                                 <div>
@@ -43,11 +43,11 @@ export default function Facilities(){
                                                                      </div>
                                                                      <div className="flex mt-1">
                                                                              <img src={tickBox} className="w-5 mt-3 ml-2 h-6"></img>
-                                                                             <p className="ml-3 mt-3 text-justify text-lg"> Bus Fees - 10,000/- </p>
+                                                                             <p className="ml-3 mt-3 text-justify text-lg"> Bus Fees - 20,000/- </p>
                                                                      </div>
                                                                      <div className="flex mt-1 ml-5"> 
                                                                              <img src={circleDot} className="w-2 mt-3 ml-2 h-2"></img>
-                                                                             <p className="ml-2 mt-2 text-justify text-md">Students who wish to avail the college bus facility should pay Demand Draft of Rs. 10,000/-. in favour of BECB payable at Bapatla </p>
+                                                                             <p className="ml-2 mt-2 text-justify text-md">Students who wish to avail the college bus facility should pay Demand Draft of Rs. 20,000/-. in favour of BECB payable at Bapatla </p>
                                                                      </div>
                                                                      <div className="flex mt-1 ml-5"> 
                                                                              <img src={circleDot} className="w-2 mt-3 ml-2 h-2"></img>

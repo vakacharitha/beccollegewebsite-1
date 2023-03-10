@@ -22,6 +22,9 @@ import RoboticCentre from "/src/pages/Facilities/RoboticCentre.jsx";
 import BoschRexrothCEO from "/src/pages/Facilities/BoschRexrothCEO.jsx";
 import Cafteria from "/src/pages/Facilities/Cafteria.jsx";
 import Transportation from "/src/pages/Facilities/Transportation.jsx";
+import Hostels from "/src/pages/Facilities/Hostel.jsx";
+import Sports from "/src/pages/Facilities/Sports.jsx";
+import Others from "/src/pages/Facilities/Otherfacilities.jsx";
 
 // import Sidebar from "/src/components/Sidebar.jsx"
 // import AboutPlacements from "/src/pages/Placements/AboutPlacements"
@@ -92,6 +95,18 @@ const router = createBrowserRouter([
 			{
 				path: "/Transportation",
 				element: <Transportation />,
+			},
+			{
+				path: "/Hostels",
+				element: <Hostels />,
+			},
+			{
+				path: "/Sports",
+				element: <Sports />,
+			},
+			{
+				path: "/Others",
+				element: <Others />,
 			},
 		],
 	},
