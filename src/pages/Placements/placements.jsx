@@ -117,6 +117,10 @@ let Placements=() =>{
 				</marquee>
 			</div>
 			</div>
+
+			
+
+			
 		</>
     )}
 
