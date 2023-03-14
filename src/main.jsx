@@ -120,7 +120,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </Sidebar>
     </BrowserRouter> */}
 
-				<RouterProvider router={router} />
 
 			<ChakraProvider>
 				<RouterProvider router={router} />
