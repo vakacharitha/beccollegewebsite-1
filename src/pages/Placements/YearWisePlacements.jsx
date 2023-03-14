@@ -1,24 +1,63 @@
 import '/src/pages/Placements/Placements.css'
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Chart from "react-apexcharts";
 import Donutchart from '/src/components/Charts/DonutChart.jsx'
 import Donutchart1 from '/src/components/Charts/DonutChart1.jsx'
+import { getPlacementData } from "/src/config/services.js";
+
 
 let YearWisePlacements=() =>{
-  const [isHovering, setIsHovering] = useState(false);
-  const [isClicking, setIsClick] = useState(false);
+  const [resultsPerPage, setResultsPerPage] = React.useState(3);
+  const [data, setData] = useState([])
+  const newdata = []
 
-  const handleClick = () => {
-    setIsClick(true);
-  };
+	const getData = () => {
+		getPlacementData().then(res =>
+			  //setData(res.data)
+      setData(res.data.flatMap(x => x.placementData))
+		).catch(err =>
+			console.log('something went wrong', err)
+		)
+	}
 
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
+	useEffect(() => {
+		getData()
+	}, [])
 
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
+
+  const getChartData = () =>{
+    let uniqueCount = data.map(x=>x.academicyear)
+    let duplicateCount = {};
+uniqueCount.forEach(e => duplicateCount[e] = duplicateCount[e] ? duplicateCount[e] + 1 : 1);
+let result = Object.keys(duplicateCount).map(e => 
+  {
+    return {year:e, count:duplicateCount[e]}
+  });
+  return result
+  }
+  const getPieChartData = () =>{
+    let uniqueCount = data.map(x =>x.company)
+    let duplicateCount = {};
+uniqueCount.forEach(e => duplicateCount[e] = duplicateCount[e] ? duplicateCount[e] + 1 : 1);
+let result = Object.keys(duplicateCount).map(e => 
+  {
+    return {company:e, count:duplicateCount[e],}
+  });
+  return result
+  }
+
+// const mongoose = require('mongoose');
+// main().catch(err => console.log(err));
+// async function main() {
+//   await mongoose.connect('mongodb+srv://becwebsitebe:bec_2023@beccluster.0ejssk6.mongodb.net/becDB');
+//   }
+// const Placements = mongoose.model('PlacementsDataModel', placementDataSchema);
+
+// Placements.findOne({ 'studid': 'Y19AIT510' }, function (err, Placements) {
+//   if (err) return handleError(err);
+//   console.log('This is studid %s.', Placements.studid);
+// });
+  
     return(
         <>
 <div className="nav dropdown items-start show w-full pt-4">
@@ -363,7 +402,11 @@ let YearWisePlacements=() =>{
 	</div> */}
 </div>  
     {/* {isClicking && ( */}
+  
+    <>
+    
     <React.Fragment>
+      {console.log(getChartData())}
       <div className="BarChart container-fluid mb-5">
 
         <Chart
@@ -372,8 +415,8 @@ let YearWisePlacements=() =>{
           height={500}
           series={[
             {
-              name: "Students Placed",
-              data: [200, 1103, 808, 443, 460, 411, 299, 255, 230, 200],
+              name: "No of Offers",
+              data: getChartData().map(y=>y.count),
             },
           ]}
           
@@ -385,18 +428,7 @@ let YearWisePlacements=() =>{
             },
             xaxis: {
               tickPlacement: "on",
-              categories: [
-                "2022-2023",
-                "2021-2022",
-                "2020-2021",
-                "2019-2020",
-                "2018-2019",
-                "2017-2018",
-                "2016-2017",
-                "2015-2016",
-                "2014-2015",
-                "2013-2014",
-              ],
+              categories: getChartData().map(y=>y.year),
             },
 
             yaxis: {
@@ -407,7 +439,7 @@ let YearWisePlacements=() =>{
                 style: { fontSize: "15", colors: ["black"] },
               },
               title: {
-                text: "No of Students Placed",
+                text: "No of Offers",
                 style: { color: "black", fontSize: 15 },
               },
             },
@@ -427,19 +459,31 @@ let YearWisePlacements=() =>{
         ></Chart>
       </div>
     </React.Fragment>
-    {/* )} */}
     
+  
+    </>
+    
+    
+    <div className='ml-[64rem]'>
+      <select value={resultsPerPage} onChange={(event) => setResultsPerPage(event.target.value)}>
+          <option value={3}>Last 3years</option>
+          <option value={4}>Last 4years</option>
+          <option value={5}>Last 5years</option>
+          <option value={7}>Last 7years</option>
+          <option value={10}>Show All</option>
+      </select>
+      {/* <p>Results per page: {resultsPerPage}</p> */}
+    </div>
     {/* {isClicking && ( */}
       <div className='donutchart flex p-1'>Placements 2022-2023  
       <div className='pl-72'>Max sal : 5.5LPA, avg sal : 3.5LPA, min sal : 2.5LPA</div>
-      {/* <a className='float-right' href="#">View Details</a> */}
       </div>
     <Donutchart />
     {/* )} */}
     
     {/* {isClicking && ( */}
-      <div className='donutchart p-1'>Placements 2022-2023
-      <a className='float-right' href="#">View Details</a>
+      <div className='donutchart flex p-1'>Placements 2022-2023
+      <div className='pl-72'>Max sal : 5.5LPA, avg sal : 3.5LPA, min sal : 2.5LPA</div>
       </div>
     <Donutchart1 />
     {/* )} */}
