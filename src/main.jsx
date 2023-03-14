@@ -111,7 +111,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<>
 		<React.StrictMode>
-<<<<<<< HEAD
+
 				{/* <RouterProvider router={router} /> */}
 				{/* <BrowserRouter>
       <Sidebar>
@@ -120,9 +120,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </Routes>
       </Sidebar>
     </BrowserRouter> */}
-=======
-				<RouterProvider router={router} />
->>>>>>> 5fe1ce2784c6fe437216ccb5903e44d95cf4d6fd
+
+			
+
 			<ChakraProvider>
 				<RouterProvider router={router} />
 			</ChakraProvider>
