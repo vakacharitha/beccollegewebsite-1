@@ -351,7 +351,7 @@ export default function Facilities(){
 													<td>40</td>
 												</tr>
 
-												<tr className="text-center">
+												<tr className="text-center text-blue-800">
 													<td> </td>
 													<td><b>Total:</b></td>
 													<td><b>236</b></td>
