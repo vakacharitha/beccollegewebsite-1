@@ -4,6 +4,7 @@ import LibraryStaff from "/src/Data/staffData/LibraryStaff.js";
 import DigiLibImg from "/src/assets/DigitalLibrary.jpg";
 import tickmark from "/src/assets/tick-mark.png";
 import Slides from "/src/components/Carousel/Slides.jsx";
+import Arrow from "/src/assets/Arrow.png";
 
 
 
@@ -33,6 +34,7 @@ export default function Facilities(){
 			<div className="left-navcontent">
 				<div className="col">
 					<div className="tab-content" id="tabContent">
+						
 							<div className="tab-pane fade show in active" style={{width:"fit-content"}} id="libraryhome" role="tabpanel" aria-labelledby="libraryhome-tab">
 							{/* <div className='line w-14 h-1 mb-2' style={{background:"#0060b1"}}></div> */}
 									<div className="w-full text-lg text-justify pr-3 pt-3" >
@@ -122,7 +124,7 @@ export default function Facilities(){
 										</div>
 							</div>
 							<div className="tab-pane fade px-5" id="E-library" role="tabpanel" aria-labelledby="E-library-tab">
-									<div className=" w-10/12 h-60 items-center facilities-background border-2 border-black rounded-md"> 
+									<div className=" w-10/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-3"> 
 												<h4 className="font-serif font-semibold text-xl px-3 mt-3"> IEEE-ASP:</h4>
 												<div className='line w-14 h-1 ml-3 mb-3' style={{background:"#0060b1"}}></div> 
 												<p className="justify-center text-lg ml-5 ">All Society Periodicals on Computer Engineering + Computer Science + Electrical & Electronics Engineering + Telecommunications & related disciplines</p>
@@ -202,7 +204,7 @@ export default function Facilities(){
 							</div>
 							<div className="tab-pane fade md:ml-28 xl:ml-0" id="E-books" role="tabpanel" aria-labelledby="E-books-tab">
 								<div>
-									<h4 className="ml-3 mt-3 text-2xl text-cyan-800 "> <b>e-Journals & e-Books:</b> </h4>
+									<h4 className="ml-3 mt-2 text-2xl text-cyan-800 "> <b>e-Journals & e-Books:</b> </h4>
 									<div className='line w-16 h-1 ml-3' style={{background:"#0060b1"}}></div>
 									<p className="text-justify mt-4 ml-4 my-2 text-lg pr-3"> The following subscriptions can be used from any desktop or laptop with in the campus network and through Knimbus Mobile App.</p>
 									<p className="text-justify  ml-4 my-2 text-lg pr-3"> <b className="text-xl"> Note:- </b>  IP address based access is provided for all e journals in our college campus. Hence, all the following e-Journals are directly accessible in our College Campus network systems  and no user name & password is required. In case of any difficulty in accessing these e resources, please contact the - Librarian / HOD Concerned.</p>
@@ -221,7 +223,7 @@ export default function Facilities(){
 							</div>
 							<div className="tab-pane fade " id="nptel" role="tabpanel" aria-labelledby="nptel-tab">
 
-										<h3 className="text-xl font-bold mt-4 font-serif">NPTEL Video Courses:</h3>
+										<h3 className="text-2xl font-bold mt-3 font-serif">NPTEL Video Courses:</h3>
 										<div className='line w-20 h-1 mb-4' style={{background:"#0060b1"}}></div> 
 										<div className=" border-black border-2 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-[36rem] overflow-y-scroll ">									
 											<table className="table">
@@ -360,24 +362,16 @@ export default function Facilities(){
 											</table>
 											
 										</div>
-
-									
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+										<div className="flex mt-4">
+			                              <img src={Arrow} className=" w-5 h-5 mt-1"></img>
+							              <p className="text-lg ml-2 font-semibold"> NPTEL URL:</p>
+										  <a href="https://nptel.ac.in/ " className="text-lg text-blue-900 ml-3"> https://nptel.ac.in </a>
+										</div>
+										<div className="flex mt-2">
+										 <img src={Arrow} className=" w-5 h-5 mt-1"></img>
+							              <p className="text-lg ml-2 font-semibold">Swayam URL:</p>
+										  <a href="https://swayam.gov.in/" className="text-lg text-blue-900 ml-3"> https://swayam.gov.in</a>
+										</div>
 							</div>
 
 					</div>
