@@ -1,5 +1,5 @@
 import "/src/pages/Facilities/Facilities.css";
-import Staff from "/src/components/staff/staff.jsx";
+import Staff from "/src/components/staff/staffLib.jsx";
 import LibraryStaff from "/src/Data/staffData/LibraryStaff.js";
 import DigiLibImg from "/src/assets/DigitalLibrary.jpg";
 import tickmark from "/src/assets/tick-mark.png";
@@ -217,8 +217,8 @@ export default function Facilities(){
 								
 							</div>
 							<div className="tab-pane fade " id="librarystaff" role="tabpanel" aria-labelledby="librarystaff-tab">
-								   <h3 className="font-semibold font-mono text-2xl mt-3">Staff Members</h3>
-								   <div className='line w-14 h-1 mb-2' style={{background:"#0060b1"}}></div>
+								   <h3 className="font-semibold font-serif text-2xl mt-3">Staff Members</h3>
+								   <div className='line w-14 h-1' style={{background:"#0060b1"}}></div>
 									<div className="mt-3 p-3 ">
 				               				<div className="staff-container grid grid-flow-row justify-center gap-4 mt-3 mb-5 md:grid-cols-1 md:ml-32 md:justify-items-center lg:grid-cols-1 xl:ml-0 xl:grid-cols-2 2xl:grid-cols-3">{Library}</div>
 									</div>
