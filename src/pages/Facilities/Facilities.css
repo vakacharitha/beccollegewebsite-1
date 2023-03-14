@@ -10,6 +10,7 @@
 .facilities-Home{
     background-color: rgb(148, 253, 255);
 }
+<<<<<<< Updated upstream
 tr:nth-child(even) {
     background-color:rgb(205, 240, 253);
 }
@@ -19,3 +20,8 @@ tr:nth-child(odd) {
 th{
     background-color:rgb(95, 188, 255);
 }
+=======
+.table, .table-row, td, th{
+    border: 2px solid black;
+}
+>>>>>>> Stashed changes
