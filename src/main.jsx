@@ -111,11 +111,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<>
 		<React.StrictMode>
-<<<<<<< Updated upstream
-	{/* <RouterProvider router={router} /> */}
-=======
 				
->>>>>>> Stashed changes
 				{/* <BrowserRouter>
       <Sidebar>
         <Routes>

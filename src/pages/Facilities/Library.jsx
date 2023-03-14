@@ -206,11 +206,7 @@ export default function Facilities(){
 							</div>
 							<div className="tab-pane fade md:ml-28 xl:ml-0" id="E-books" role="tabpanel" aria-labelledby="E-books-tab">
 								<div>
-<<<<<<< Updated upstream
-									<h4 className="ml-3 mt-2 text-2xl text-cyan-800 "> <b>e-Journals & e-Books:</b> </h4>
-=======
 									<h4 className="ml-3 mt-3 text-2xl text-cyan-800 "> <b>e-Journals & e-Books:</b> </h4>
->>>>>>> Stashed changes
 									<div className='line w-16 h-1 ml-3' style={{background:"#0060b1"}}></div>
 									<p className="text-justify mt-4 ml-4 my-2 text-lg pr-3"> The following subscriptions can be used from any desktop or laptop with in the campus network and through Knimbus Mobile App.</p>
 									<p className="text-justify  ml-4 my-2 text-lg pr-3"> <b className="text-xl"> Note:- </b>  IP address based access is provided for all e journals in our college campus. Hence, all the following e-Journals are directly accessible in our College Campus network systems  and no user name & password is required. In case of any difficulty in accessing these e resources, please contact the - Librarian / HOD Concerned.</p>
@@ -229,37 +225,6 @@ export default function Facilities(){
 							</div>
 							<div className="tab-pane fade " id="nptel" role="tabpanel" aria-labelledby="nptel-tab">
 										
-										<div>
-											<table className="table">
-												<tr>
-													<th>Name</th>
-													<th colspan="2">Telephone</th>
-												</tr>
-												<tr className="table-row">
-													<td>Bill Gates</td>
-													<td>555 77 854</td>
-													<td>555 77 855</td>
-												</tr>
-											</table>
-										</div>
-
-									
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 										<h3 className="text-2xl font-bold mt-3 font-serif">NPTEL Video Courses:</h3>
 										<div className='line w-20 h-1 mb-4' style={{background:"#0060b1"}}></div> 
 										<div className=" border-black border-2 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-[36rem] overflow-y-scroll ">									
