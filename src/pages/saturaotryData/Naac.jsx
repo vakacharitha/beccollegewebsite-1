@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NaacItems from "/src/components/saturatoryDataComponents/NaacItems.jsx"
 import naacCycles from "/src/Data/saturatoryData/naacCycles.js"
-function Aicte() {
+function Naac() {
     const [selectedValue, setSelectedValue] = useState('');
     const [showButtons, setShowButtons] = useState(true);
     const [documentYear, setDocumentYear] = useState('');
@@ -55,10 +55,11 @@ function Aicte() {
                         <div className='grid grid-cols-1 md:grid-cols-3 gap-8  w-auto'>
 
                         {
-                naacCycles.map(naacCycles => (
+                naacCycles.map((naacCycles, index) => (
                     <NaacItems
                     title={naacCycles.title}
                     parts={naacCycles.parts}
+                    index={index}
                     >
                     </NaacItems>
                 ))
@@ -77,4 +78,4 @@ function Aicte() {
     )
 }
 
-export default Aicte
+export default Naac

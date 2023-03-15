@@ -24,6 +24,6 @@ export default[
         title: 'IQAC',
         imgUrl:'/src/assets/saturatoryData/download.png',
         description:'Internal Quality Assurance Cell (IQAC) is a part of the institution’s system and work towards realization of the goals of quality enhancement and sustenance.The work of the IQAC is the first step towards internalization and institutionalization of quality  enhancement .',
-        url:"/iqac"
+        url:"/iqacPage"
     }, 
 ];

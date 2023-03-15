@@ -10,9 +10,8 @@ import It from "/src/pages/departments/IT.jsx";
 import Aicte from "/src/pages/saturaotryData/aicte.jsx"
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
 import NaacPage from "/src/pages/saturaotryData/Naac.jsx"
-
-
-
+import IqacPage from "./pages/saturaotryData/Iqac"
+import Nirf from "/src/pages/saturaotryData/nirf.jsx"
 
 const router = createBrowserRouter([
 	{
@@ -44,6 +43,14 @@ const router = createBrowserRouter([
 			{
 				path: "/naacPage",
 				element: <NaacPage />,
+			},
+			{
+				path: "/iqacPage",
+				element: <IqacPage />,
+			},
+			{
+				path: "/nirf",
+				element: <Nirf />,
 			},
 			
 			
