@@ -1,29 +1,26 @@
-import BusImg1 from "/src/assets/BusesImg1.png";
-import BusImg4 from "/src/assets/BusesImg4.png";
-import BusImg3 from "/src/assets/BusesImg3.png";
+import SportsImg1 from "/src/assets/SportsImg1.jpg";
+import SportsImg2 from "/src/assets/SportsImg2.jpg";
+import SportsImg3 from "/src/assets/SportsImg3.jpg";
 
-function Slider4(){
+function Slider8(){
     return(
         <>
     <div id="default-carousel" className="relative mt-4 px-32" data-carousel="slide">
             <div className="relative overflow-hidden md:h-[32rem] rounded-xl" >
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
                     <span className="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                    <img src={BusImg1} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                    <img src={SportsImg1} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                 </div>
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src={BusImg4} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                    <img src={SportsImg2} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                 </div>
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src={BusImg3} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                    <img src={SportsImg3} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                 </div>
-               
             </div>
             <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
                 <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-
-                <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="1"></button>
-
+                <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="1"></button>
                 <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
             </div>
             <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-36 cursor-pointer group focus:outline-none" data-carousel-prev>
@@ -43,4 +40,4 @@ function Slider4(){
         </>
     )
 }
-export default Slider4
+export default Slider8
