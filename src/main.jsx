@@ -2,7 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-import { createBrowserRouter, RouterProvider, BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+	createBrowserRouter,
+	RouterProvider,
+	BrowserRouter,
+	Route,
+	Routes,
+} from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import Root from "/src/routes/root.jsx";
@@ -111,7 +117,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<>
 		<React.StrictMode>
-				<RouterProvider router={router} />
 			<ChakraProvider>
 				<RouterProvider router={router} />
 			</ChakraProvider>
