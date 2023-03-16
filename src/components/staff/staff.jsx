@@ -11,8 +11,8 @@ let staff = (props) => {
 				<div className="staff-name font-bold">{item.staffName}</div>
 				<div className="staff-designation">{item.staffDesignation}</div>
 				<div className="staff-breaker flex flex-row items-center">
-					<div className="staff-line h-1 w-11/12 md:w-52 bg-primary"></div>
-					<div className="staff-circle h-3 -ml-1 w-3 bg-primary rounded-full"></div>
+					<div className="staff-line h-1 w-11/12 md:w-52 bg-primaryColor"></div>
+					<div className="staff-circle h-3 -ml-1 w-3 bg-primaryColor rounded-full"></div>
 				</div>
 				<div className="staff-education font-medium text-sm">
 					{item.staffEdu}
@@ -20,7 +20,7 @@ let staff = (props) => {
 				{item.staffEmail && (
 					<div className="staff-email flex items-center flex-wrap">
 						<img className="h-6" src={emailPic}></img>
-						<a
+						<a	
 							className="text-primary font-medium underline underline-offset-2"
 							href="mailto: + {item.staffEMail}"
 						>

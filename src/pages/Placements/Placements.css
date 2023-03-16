@@ -1,11 +1,14 @@
-.Training-Placements-Menu{
+.Training-Placements-Menu, .YearWise-Placements-Menu, .BranchWise-Placements-Menu{
 	font-size: larger;
 	color:#0060b1 ;
 	margin-left: 45px;
 	margin-bottom: 15px;
 	font-weight: bold;
 }
-.Objective, .Functions, .WeareHonest, .TrainingAndPlacementsTeam, .notifications, .TrainingRegistration, .PlacementGallery{
+.aboutplacements, .Objective, .Functions, .WeareHonest, .TrainingAndPlacementsTeam, .notifications, .TrainingRegistration, .PlacementGallery,
+.Placements2022-2023, .Placements2021-2022, .Placements2020-2021, .Placements2019-2020, .Placements2018-2019, .Placements2017-2018, 
+.Placements2016-2017, .Placements2015-2016, .Placements2014-2015, .Placements2013-2014
+{
 	font-size: larger;
 	color:#0060b1 ;
 	font-weight: bold;
@@ -32,7 +35,7 @@
 }
 .Recruiters{
     width: 200px;
-    height: 100px;
+    height: 102px;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     display: flex;
     font-weight: bold;
@@ -44,15 +47,114 @@
 .marqueeplacementimages{
 	width: 100%;
 }
+.marquee{
+	display: inline-flex;
+}
 form{
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-.marquee{
-	display: inline-flex;
+.canvasjs-chart-credit{
+	display: none;
 }
+@media all and (max-width:320px) {
+#chartContainer{
+	width: 10%;
+}
+}
+/* Table */
+.scroll-thead{
+    width: 100%;
+    display: inline-table;
+}
+.scroll-tbody-y
+{
+    display: block;
+    overflow-y: scroll;
+	width: 100%;
+}
+.table-body{
+    height: 500px;
+	width: 100%;
+}
+.table-striped>tbody>tr:nth-child(odd){
+	background-color:#0060b1;
+	color: white;
+ }
+ .table-striped>tbody>tr:nth-child(even){
+	background-color:white;
+	color: black;
+ }
+ .apexcharts-zoom-icon,
+ .apexcharts-zoomin-icon, 
+ .apexcharts-zoomout-icon ,.apexcharts-element-hidden,
+  .apexcharts-reset-icon, .apexcharts-pan-icon{
+	display: none;
+ }
+.apexcharts-canvas{
+	width: 900px !important;
+ }
+ #SvgjsText1454{
+	margin-top: 5px;
+ }
+ .BarChart{
+	margin-left: 250px;
+	width: 920px ;
+	border: 3px solid #0060b1;
+	margin-top: 20px;
+ }
+ .DonutChart{
+	margin-left: 250px;
+	width: 920px ;
+	border: 3px solid #0060b1;
+ }
+ .apexcharts-menu-icon{
+	display: none;
+ }
+ .apexcharts-title-text{
+	font-size: 20px !important;
+ }
+.apexcharts-xaxis-label{
+	font-weight: 600 !important;
+ }
+ .placements-header{
+	margin-right: 349px !important;
+	font-size: large;
+	color: white;
+	background-color: #0060b1;
+	font-weight: bold;
+	margin-left: 250px;
+ }
+ .float-right:hover{
+	color: #fff;
+ }
+ .selectYears{
+	background-color: #0060b1;
+	color: #fff;
+	cursor: pointer;
+	width: fit-content;
+	padding: 10px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 17px;
+
+ }
+ @media all and (max-width:320px) {
+	.Training-Placements-Menu{
+		margin-bottom: -60px;
+	}
+ }
 @media all and (max-width:768px) {
+	.placementmenuitems, .YearWiseplacementmenuitems, .BranchWiseplacementmenuitems{
+		margin-left: -29px;
+	}
+	.YearWise-Placements-Menu, .BranchWise-Placements-Menu{
+		margin-bottom:-10px;
+	}
+	.left-navcontent{
+		margin-left: 20px;
+	}
 	.Recruiters{
 		width: 100px;
 		height: 70px;
@@ -70,5 +172,13 @@ form{
 	}
 	.Recruitersdiv{
 		height: 70px;
+	}
+	.marqueeplacementimages>img{
+		height: 70px;
+	}
+}
+@media all and (min-width:1465px) {
+	.row{
+		flex-wrap: nowrap;
 	}
 }
